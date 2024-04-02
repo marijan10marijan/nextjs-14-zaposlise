@@ -589,6 +589,7 @@ const UvjetiKorištenja = () => {
           <Link
             className={styles.uvjetiLink}
             href="mailto:podrska@zaposlise.hr"
+            target="_blank"
           >
             podrska@zaposlise.hr
           </Link>

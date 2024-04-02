@@ -517,7 +517,13 @@ const PolitikaPrivatnosti = () => {
         </p>
         <p className={styles.politikaDesc}>
           E-mail:{" "}
-          <Link className={styles.politikaLink} href="mailto:podrska@zaposlise.hr">podrska@zaposlise.hr</Link>
+          <Link
+            className={styles.politikaLink}
+            href="mailto:podrska@zaposlise.hr"
+            target="_blank"
+          >
+            podrska@zaposlise.hr
+          </Link>
         </p>
         <p className={styles.politikaDesc}>Ažurirano [03.01.2023.]</p>
       </div>
