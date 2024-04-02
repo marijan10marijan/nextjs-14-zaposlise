@@ -1,0 +1,317 @@
+.kontaktHeaderContainer {
+  position: relative;
+  min-height: 496px;
+  color: #000;
+  font-family: var(--ff-inter-regular-400);
+  background-color: #f9f9f9;
+}
+.kontaktHeaderBackground {
+  position: absolute;
+  left: 0;
+  top: -70px;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://zaposlise.hr/wp-content/uploads/2021/11/about-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.kontaktDesc {
+  width: 50%;
+  padding-block-start: 60px;
+  position: relative;
+  z-index: 2;
+}
+.kontaktDesc h1 {
+  font-family: var(--ff-inter-bold-700);
+  line-height: 1;
+  font-size: 50px;
+  color: #222132;
+  margin: 0;
+  padding: 0 0 20px;
+}
+.kontaktDesc p {
+  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.kontaktHeaderDecoration {
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  z-index: 2;
+  background: url(//zaposlise.hr/wp-content/themes/ngtheme/assets/css/../i/dotline3.png)
+    left top repeat;
+  width: 157px;
+  height: 318px;
+  opacity: 0.5;
+}
+
+/* KONTAKT MAIN *******************************************************************/
+.kontaktMainFull {
+  background-color: #f9f9f9 !important;
+  width: 100%;
+  padding-block-start: 100px;
+  overflow: hidden;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.kontaktMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.kontaktLeft {
+  flex: 1;
+}
+.kontaktRight {
+  flex: 1;
+  height: 600px;
+  background: url("https://zaposlise.hr/wp-content/uploads/2021/11/img2.jpg");
+  background-color: transparent;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.kontaktDecoration {
+  position: absolute;
+  right: 0;
+  bottom: -158px;
+  background: url(//zaposlise.hr/wp-content/themes/ngtheme/assets/css/../i/dotline3.png)
+    left top repeat;
+  width: 187px;
+  height: 318px;
+  color: #000;
+}
+
+/* KONTAKT MAP *******************************************************************/
+.mapFull {
+  width: 100%;
+  font-family: var(--ff-inter-regular-400);
+}
+.mapBackground {
+  background: url(https://zaposlise.hr/wp-content/uploads/2021/12/map.jpg)
+    center center no-repeat;
+  background-size: cover;
+  padding-block: 80px;
+}
+
+.mapInsideContainer {
+  padding-block: 50px;
+  display: flex;
+}
+.mapLeft {
+  flex: 1;
+}
+.mapRight {
+  flex: 1;
+}
+.mapBox {
+  padding-inline: 45px;
+  padding-block-start: 45px;
+  padding-block-end: 25px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 31px 84px;
+  border-radius: 10px;
+  width: 508px;
+}
+.mapBox h3 {
+  font-size: 32px;
+  font-family: var(--ff-inter-bold-700);
+  margin-block-end: 15px;
+}
+.mapAddress,
+.mapEmail {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.mapAddress div,
+.mapEmail div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-block-end: 15px;
+}
+.mapAddressImage,
+.mapEmailImage {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-inline-start: -20px;
+}
+.mapAddress p,
+.mapEmail p {
+  display: block;
+  color: #8c8c8f;
+  font-size: 15px;
+}
+.mapAddress .adresa {
+  color: #000;
+  font-size: 19px;
+}
+.mapEmailLink {
+  color: #19bb70;
+  transition: all 200ms linear;
+}
+.mapEmailLink:hover {
+  color: #000;
+}
+.mapRightMobile {
+  display: none;
+}
+
+/* BREAKPOINTS  *******************************************************************/
+@media (max-width: 1600px) {
+  .kontaktDesc h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1440px) {
+  .kontaktDesc {
+    margin-inline-start: 100px;
+    padding-block-start: 120px;
+  }
+}
+@media (max-width: 1290px) {
+}
+@media (max-width: 1199px) {
+  .kontaktHeaderContainer {
+    min-height: 361px;
+  }
+  .kontaktDesc {
+    padding-block-start: 50px;
+  }
+  .mapBox {
+    width: 460px;
+  }
+  .mapBox h3 {
+    font-size: 40px;
+  }
+  .mapAddress p,
+  .mapEmail p {
+    font-size: 18px;
+  }
+  .mapAddress div,
+  .mapEmail div {
+    padding-block-end: 0px;
+  }
+  .mapAddressImage,
+  .mapEmailImage {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+  }
+  .mapAddress .adresa {
+    font-size: 24px;
+  }
+  .mapEmailLink {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1090px) {
+  .kontaktDesc {
+    margin-inline-start: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .kontaktDesc {
+    margin-inline-start: 0px;
+  }
+  .mapBackground {
+    padding-block: 40px;
+  }
+  .mapLeft {
+    flex: 0;
+  }
+
+  .mapBox {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .kontaktHeaderContainer {
+    min-height: 204px;
+  }
+  .kontaktDesc {
+    padding-block-start: 10px;
+    width: 100%;
+  }
+  .kontaktDesc h1 {
+    font-size: 24px;
+    padding-block-end: 15px;
+  }
+  .kontaktDesc p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .kontaktHeaderDecoration {
+    display: none;
+  }
+  .mapRight,
+  .mapLeft {
+    display: none;
+  }
+  .mapBackground {
+    height: 320px;
+    width: 100%;
+  }
+  .mapRightMobile {
+    display: block;
+  }
+  .mapBox {
+    border-radius: 0px;
+    padding: 25px 20px 30px;
+  }
+  .mapAddress,
+  .mapEmail {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .mapBox h3 {
+    font-size: 28px;
+  }
+  .mapAddressImage,
+  .mapEmailImage {
+    margin-inline-start: -20px;
+    width: 110px;
+    height: 110px;
+  }
+  .mapAddress div,
+  .mapEmail div {
+    margin-block-start: -20px;
+  }
+  .mapAddress .adresa {
+    line-height: 20px;
+  }
+  .mapEmailLink {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 590px) {
+  .mapBackground {
+    height: 270px;
+  }
+}
+@media (max-width: 505px) {
+  .mapBackground {
+    height: 210px;
+  }
+}

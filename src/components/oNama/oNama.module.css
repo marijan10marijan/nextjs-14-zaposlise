@@ -1,0 +1,115 @@
+/* O NAMA MAP *******************************************************************/
+.mapFull {
+  width: 100%;
+  font-family: var(--ff-inter-regular-400);
+}
+.mapBackground {
+  background: url(https://zaposlise.hr/wp-content/uploads/2021/12/map.jpg)
+    center center no-repeat;
+  background-size: cover;
+  padding-block: 80px;
+}
+
+.mapInsideContainer {
+  padding-block: 50px;
+  display: flex;
+}
+.mapLeft {
+  flex: 1;
+}
+.mapRight {
+  flex: 1;
+}
+.mapBox {
+  padding-inline: 45px;
+  padding-block-start: 45px;
+  padding-block-end: 25px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 31px 84px;
+  border-radius: 10px;
+  width: 508px;
+}
+.mapBox h3 {
+  font-size: 32px;
+  font-family: var(--ff-inter-bold-700);
+  margin-block-end: 15px;
+}
+.mapAddress,
+.mapEmail {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.mapAddress div,
+.mapEmail div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-block-end: 15px;
+}
+.mapAddressImage,
+.mapEmailImage {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-inline-start: -20px;
+}
+.mapAddress p,
+.mapEmail p {
+  display: block;
+  color: #8c8c8f;
+  font-size: 15px;
+}
+.mapAddress .adresa {
+  color: #000;
+  font-size: 19px;
+}
+.mapEmailLink {
+  color: #19bb70;
+  transition: all 200ms linear;
+}
+.mapEmailLink:hover {
+  color: #000;
+}
+.mapRightMobile {
+  display: none;
+}
+
+/* BREAKPOINTS  *******************************************************************/
+
+@media (max-width: 1199px) {
+  .mapBox {
+    width: 460px;
+  }
+  .mapBox h3 {
+    font-size: 40px;
+  }
+  .mapAddress p,
+  .mapEmail p {
+    font-size: 18px;
+  }
+  .mapAddress div,
+  .mapEmail div {
+    padding-block-end: 0px;
+  }
+  .mapAddressImage,
+  .mapEmailImage {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+  }
+  .mapAddress .adresa {
+    font-size: 24px;
+  }
+  .mapEmailLink {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 590px) {
+}
+@media (max-width: 505px) {
+}

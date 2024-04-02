@@ -1,0 +1,54 @@
+.wrapper {
+  width: 100%;
+  color: rgb(34, 33, 50);
+  padding-block-start: 20px;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 15px;
+  font-family: var(--ff-inter-regular-400);
+}
+
+.kodeksTitle {
+  font-family: var(--ff-inter-bold-700);
+  margin-block: clamp(1.2rem, 4vw, 1.7rem);
+  font-size: clamp(2rem, 4vw, 2.3rem);
+}
+.kodeksGeneralno {
+  font-family: var(--ff-inter-bold-700);
+  padding-block-end: 45px;
+  line-height: 25px;
+}
+
+.kodeksDesc {
+  padding-block-end: 45px;
+  line-height: 25px;
+}
+
+.kodeksSubtitle {
+  font-family: var(--ff-inter-bold-700);
+  margin-block: clamp(1rem, 4vw, 1.5rem);
+  font-size: clamp(1.85rem, 4vw, 2rem);
+}
+
+.kodeksList {
+  padding-left: 1.5em;
+  margin-block-end: 20px;
+}
+
+.kodeksList li {
+  margin-block-end: 1rem;
+  font-size: 17px;
+  color: rgb(34, 33, 50);
+  line-height: 25px;
+}
+.kodeksList li strong {
+  font-family: var(--ff-inter-bold-700);
+}
+
+.kodeksEndPadding {
+  padding-block-end: 45px;
+}
