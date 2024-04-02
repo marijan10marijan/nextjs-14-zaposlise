@@ -9,7 +9,7 @@ const KodeksPonašanja = () => {
         <p className={styles.kodeksGeneralno}>
           <strong>Generalno:</strong>
         </p>
-        <p className={styles.kodeksDesc}>
+        <p className={styles.kodeksDesc}> 
           Kodeks ponašanja Zaposlise.hr smjernica je za stvaranje profesionalnog
           i pozitivnog iskustva kako za korisnike koji traže posao, tako i za
           poslodavce ili regrutere.

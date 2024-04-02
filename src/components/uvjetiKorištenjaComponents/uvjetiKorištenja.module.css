@@ -16,6 +16,7 @@
   font-family: var(--ff-inter-bold-700);
   margin-block: clamp(1.2rem, 4vw, 1.7rem);
   font-size: 50px;
+  line-height: 1;
 }
 .uvjetiDesc {
   padding-block-end: 45px;
@@ -46,5 +47,15 @@
 @media (max-width: 1199px) {
   .uvjetiTitle {
     font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .uvjetiTitle {
+    font-size: 28px;
+  }
+}
+@media (max-width: 505px) {
+  .uvjetiDesc {
+    padding-block-end: 35px;
   }
 }

@@ -16,11 +16,13 @@
   font-family: var(--ff-inter-bold-700);
   margin-block: clamp(1.2rem, 4vw, 1.7rem);
   font-size: clamp(2rem, 4vw, 2.3rem);
+  line-height: 1;
 }
 .kodeksGeneralno {
   font-family: var(--ff-inter-bold-700);
   padding-block-end: 45px;
   line-height: 25px;
+  font-size: 17px;
 }
 
 .kodeksDesc {
@@ -51,4 +53,13 @@
 
 .kodeksEndPadding {
   padding-block-end: 45px;
+}
+
+@media (max-width: 505px) {
+  .kodeksGeneralno {
+    padding-block-end: 35px;
+  }
+  .kodeksDesc {
+    padding-block-end: 35px;
+  }
 }
