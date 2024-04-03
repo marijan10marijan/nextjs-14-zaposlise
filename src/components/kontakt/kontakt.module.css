@@ -266,6 +266,7 @@
   }
   .kontaktRight {
     width: 845px;
+    aspect-ratio: 1/1;
     align-self: flex-start;
     flex: auto;
   }
