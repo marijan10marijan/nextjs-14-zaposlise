@@ -1,0 +1,86 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+.formBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.formIme,
+.formPrezime,
+.formEmail,
+.formPoruka,
+.formTel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.formBox label {
+  color: rgb(34, 33, 50);
+  font-family: var(--ff-inter-semi-bold-600);
+}
+.formBox span {
+  color: #19bb70;
+  margin-inline-start: 3px;
+}
+.formBox input,
+.formBox textarea {
+  border: 1.6px solid rgb(226, 226, 233);
+  border-radius: 0.55rem;
+  font-size: 1.1rem;
+  color: #606266;
+  caret-color: #606266;
+  font-family: -apple-system, "system-ui", Segoe UI, Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, Helvetica Neue, sans-serif;
+  line-height: 1;
+  margin-bottom: 0;
+  width: 100%;
+  display: block;
+  padding: 12px 15px;
+  padding-left: 2rem;
+  cursor: text;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.formBox input:focus,
+.formBox textarea:focus {
+  border: 1.6px solid #1565d8;
+}
+.formBox textarea {
+  resize: none;
+}
+.formBox input:focus,
+.formBox textarea:focus {
+  outline: none;
+}
+.formBox input::placeholder,
+.formBox textarea::placeholder {
+  color: #606266;
+}
+
+.formButton {
+  display: inline-block;
+  background-color: #409eff;
+  color: #ffffff;
+  box-shadow: rgba(25, 187, 112, 0.26) 0 20px 27px;
+  line-height: 1;
+  padding: 18px 45px;
+  font-family: var(--ff-inter-medium-500);
+  border-radius: 6px;
+  border: 0;
+  font-size: 21px;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+.formButton:hover {
+  opacity: 0.8;
+  outline: 0;
+}
