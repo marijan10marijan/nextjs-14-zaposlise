@@ -256,6 +256,9 @@
   .kontaktDesc {
     margin-inline-start: 0px;
   }
+  .kontaktMainFull {
+    padding-block-start: 25px;
+  }
 
   .kontaktMain {
     flex-direction: column;
