@@ -1,5 +1,5 @@
 import React from "react";
-import PolitikaPrivatnosti from "@/components/politikaPrivatnostiComponents/PolitikaPrivatnosti";
+import PolitikaPrivatnosti from "@/components/politikaPrivatnosti/PolitikaPrivatnosti";
 
 export const metadata = {
   title: "Politika privatnosti - Zaposlise.hr",

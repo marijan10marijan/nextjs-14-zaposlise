@@ -69,15 +69,16 @@
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
 }
 .kontaktLeft {
   flex: 1;
+  align-self: flex-start;
 }
 .kontaktRight {
   flex: 1;
+  align-self: flex-end;
   aspect-ratio: 1/1;
   background: url("https://zaposlise.hr/wp-content/uploads/2021/11/img2.jpg");
   background-size: contain;
@@ -102,6 +103,19 @@
   width: 187px;
   height: 318px;
   color: #000;
+}
+/* KONTAKT TITLE AND SUBTITLE ****************************************************/
+.kontaktTitle {
+  font-family: var(--ff-inter-bold-700);
+  font-size: 36px;
+  line-height: 1;
+  color: #222132;
+  margin-block-end: 15px;
+}
+.kontaktSubtitle {
+  margin-block-end: 30px;
+  font-size: 16px;
+  color: rgb(34, 33, 50);
 }
 
 /* KONTAKT MAP *******************************************************************/

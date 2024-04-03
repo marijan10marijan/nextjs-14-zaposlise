@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./kontakt.module.css";
-import KontaktForm from "./KontaktForm";
+import KontaktForm from "./kontaktForm/KontaktForm";
 
-const KontaktMain = ({title, subtitle}) => {
+const KontaktMain = ({ title, subtitle }) => {
   return (
     <div className={styles.kontaktMainFull}>
       <div className={`${styles.kontaktMain} ${styles.container}`}>
         <div className={styles.kontaktLeft}>
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
-          <KontaktForm /> 
+          <h2 className={styles.kontaktTitle}>{title}</h2>
+          <p className={styles.kontaktSubtitle}>{subtitle}</p>
+          <KontaktForm />
         </div>
         <div className={styles.kontaktRight}>
           <div className={styles.kontaktRightOverlay}></div>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./oNama.module.css";
 import Link from "next/link";
-import MapBox from "../kontaktComponents/MapBox";
+import MapBox from "../kontakt/MapBox";
 
 const ONamaMap = () => {
   return (

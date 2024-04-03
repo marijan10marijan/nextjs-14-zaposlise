@@ -1,4 +1,4 @@
-import KontaktMain from "@/components/kontaktComponents/KontaktMain";
+import KontaktMain from "@/components/kontakt/KontaktMain";
 import ONamaMap from "@/components/oNama/ONamaMap";
 import React from "react";
 

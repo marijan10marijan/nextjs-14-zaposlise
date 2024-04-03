@@ -1,5 +1,5 @@
 import React from "react";
-import UvjetiKorištenja from "@/components/uvjetiKorištenjaComponents/UvjetiKorištenja";
+import UvjetiKorištenja from "@/components/uvjetiKorištenja/UvjetiKorištenja";
 
 export const metadata = {
   title: "Uvjeti korištenja - Zaposlise.hr",
