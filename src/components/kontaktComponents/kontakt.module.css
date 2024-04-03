@@ -253,6 +253,9 @@
     align-self: flex-start;
     flex: auto;
   }
+  .kontaktRightOverlay {
+    display: none;
+  }
   .kontaktDecoration {
     display: none;
   }
@@ -310,6 +313,7 @@
   }
   .mapRightBox h3 {
     font-family: var(--ff-inter-bold-700);
+    margin-block-end: 15px;
   }
   .mapAddress,
   .mapEmail {
