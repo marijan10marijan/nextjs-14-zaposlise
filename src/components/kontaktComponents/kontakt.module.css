@@ -48,7 +48,7 @@
   position: absolute;
   right: 0;
   bottom: -80px;
-  z-index: 2;
+  /* z-index: 2; */
   background: url(//zaposlise.hr/wp-content/themes/ngtheme/assets/css/../i/dotline3.png)
     left top repeat;
   width: 157px;
@@ -61,15 +61,13 @@
   background-color: #f9f9f9 !important;
   width: 100%;
   padding-block-start: 100px;
-  overflow: hidden;
 }
-.container {
+
+.kontaktMain {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-}
-.kontaktMain {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,13 +78,20 @@
 }
 .kontaktRight {
   flex: 1;
-  height: 600px;
+  aspect-ratio: 1/1;
   background: url("https://zaposlise.hr/wp-content/uploads/2021/11/img2.jpg");
-  background-color: transparent;
-  background-blend-mode: multiply;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+.kontaktRightOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background-color: #f9f9f96b;
 }
 .kontaktDecoration {
   position: absolute;
@@ -101,8 +106,10 @@
 
 /* KONTAKT MAP *******************************************************************/
 .mapFull {
+  position: relative;
   width: 100%;
   font-family: var(--ff-inter-regular-400);
+  z-index: 2;
 }
 .mapBackground {
   background: url(https://zaposlise.hr/wp-content/uploads/2021/12/map.jpg)
@@ -139,7 +146,7 @@
 .mapEmail {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .mapAddress div,
 .mapEmail div {
@@ -233,6 +240,22 @@
   .kontaktDesc {
     margin-inline-start: 0px;
   }
+
+  .kontaktMain {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .kontaktLeft {
+    flex: auto;
+  }
+  .kontaktRight {
+    width: 845px;
+    align-self: flex-start;
+    flex: auto;
+  }
+  .kontaktDecoration {
+    display: none;
+  }
   .mapBackground {
     padding-block: 40px;
   }
@@ -242,6 +265,13 @@
 
   .mapBox {
     width: 100%;
+  }
+}
+@media (max-width: 845px) {
+  .kontaktRight {
+    width: 100%;
+    min-height: 1px;
+    object-fit: contain;
   }
 }
 @media (max-width: 767px) {
@@ -274,9 +304,12 @@
   .mapRightMobile {
     display: block;
   }
-  .mapBox {
+  .mapRightBox {
     border-radius: 0px;
     padding: 25px 20px 30px;
+  }
+  .mapRightBox h3 {
+    font-family: var(--ff-inter-bold-700);
   }
   .mapAddress,
   .mapEmail {

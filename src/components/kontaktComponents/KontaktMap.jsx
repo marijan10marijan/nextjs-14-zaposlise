@@ -4,7 +4,7 @@ import Link from "next/link";
 import MapBox from "./MapBox";
 
 const KontaktMap = () => {
-  return (
+  return ( 
     <div className={styles.mapFull}>
       <div className={styles.mapBackground}>
         <div className={`${styles.mapInsideContainer} ${styles.container}`}>

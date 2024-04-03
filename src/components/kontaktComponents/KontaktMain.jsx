@@ -9,9 +9,11 @@ const KontaktMain = ({title, subtitle}) => {
         <div className={styles.kontaktLeft}>
           <h2>{title}</h2>
           <p>{subtitle}</p>
-          <KontaktForm />
+          <KontaktForm /> 
         </div>
-        <div className={styles.kontaktRight}></div>
+        <div className={styles.kontaktRight}>
+          <div className={styles.kontaktRightOverlay}></div>
+        </div>
         <div className={styles.kontaktDecoration}></div>
       </div>
     </div>

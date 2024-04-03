@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./kontakt.module.css";
 import Link from "next/link";
 
-const MapBox = ({page}) => {
+const MapBox = ({page}) => { 
   return (
     <div className={styles.mapBox}>
       <h3>Kontaktiraj nas već danas</h3>
