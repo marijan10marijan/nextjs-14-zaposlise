@@ -1,0 +1,43 @@
+.formTel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.formTelSelector {
+  position: relative;
+}
+.formTelSelector select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  padding-inline: 6px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1.6px solid rgb(226, 226, 233);
+  caret-color: #606266;
+  transition: all 200ms linear;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-color: rgba(25, 187, 112, 0.1);
+  background-position: left 50% top 50%;
+}
+.formTelSelector select:focus {
+  border: 1.6px solid #1565d8;
+}
+
+.formTelSelector input {
+  padding-inline-start: 38px;
+}

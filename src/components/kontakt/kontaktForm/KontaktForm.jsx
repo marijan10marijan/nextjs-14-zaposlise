@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./kontaktForm.module.css";
-import TelephoneInput from "./TelephoneInput";
+import TelephoneInput from "./telephoneInput/TelephoneInput";
 
 const KontaktForm = () => {
   return (
@@ -48,7 +48,7 @@ const KontaktForm = () => {
       {/* CETVRTI FORM BOX ************************ **************************/}
       <div className={styles.formBox}>
         <button type="submit" className={styles.formButton}>
-          Pošalji
+          Pošalji!
         </button>
       </div>
     </form>

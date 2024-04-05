@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 1.25rem;
   width: 100%;
+  margin-block-end: 100px;
 }
 .formBox {
   display: flex;
@@ -44,7 +45,7 @@
   margin-bottom: 0;
   width: 100%;
   display: block;
-  padding: 12px 15px;
+  padding: 18px 15px;
   padding-left: 2rem;
   cursor: text;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -83,4 +84,22 @@
 .formButton:hover {
   opacity: 0.8;
   outline: 0;
+}
+@media (max-width: 1199px) {
+  .formBox input,
+  .formBox textarea {
+    font-size: 1.2rem;
+  }
+  .formButton {
+    font-size: 26px;
+    padding: 22px 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .form {
+    margin-block-end: 0px;
+    padding-inline: 15px;
+    width: 100%;
+  }
 }

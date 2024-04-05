@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./kontaktForm.module.css";
+import styles from "./telephoneInput.module.css";
 
 const TelephoneInput = () => {
   return (
