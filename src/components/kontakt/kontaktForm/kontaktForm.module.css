@@ -89,6 +89,12 @@
 @media (max-width: 1440px) {
   .formBox label {
     line-height: 24px;
+    font-size: 19px;
+  }
+}
+@media (max-width: 1290px) {
+  .formBox label {
+    font-size: 18px;
   }
 }
 @media (max-width: 1199px) {
@@ -102,6 +108,7 @@
   }
   .formBox label {
     line-height: 22px;
+    font-size: 16px;
   }
 }
 
@@ -118,5 +125,6 @@
   }
   .formBox label {
     line-height: 20px;
+    font-size: 20px;
   }
 }
