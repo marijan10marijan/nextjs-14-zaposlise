@@ -27,6 +27,7 @@
 .formBox label {
   color: rgb(34, 33, 50);
   font-family: var(--ff-inter-semi-bold-600);
+  line-height: 29px;
 }
 .formBox span {
   color: #19bb70;
@@ -85,6 +86,11 @@
   opacity: 0.8;
   outline: 0;
 }
+@media (max-width: 1440px) {
+  .formBox label {
+    line-height: 24px;
+  }
+}
 @media (max-width: 1199px) {
   .formBox input,
   .formBox textarea {
@@ -93,6 +99,9 @@
   .formButton {
     font-size: 26px;
     padding: 22px 50px;
+  }
+  .formBox label {
+    line-height: 22px;
   }
 }
 
@@ -106,5 +115,8 @@
 @media (max-width: 767px) {
   .formBox {
     flex-direction: column;
+  }
+  .formBox label {
+    line-height: 20px;
   }
 }
