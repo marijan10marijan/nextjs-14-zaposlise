@@ -103,3 +103,8 @@
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .formBox {
+    flex-direction: column;
+  }
+}
