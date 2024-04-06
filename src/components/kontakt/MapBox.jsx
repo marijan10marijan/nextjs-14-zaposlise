@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./kontakt.module.css";
 import Link from "next/link";
+import ONamaMapData from "../oNama/oNamaMapData/ONamaMapData";
 
-const MapBox = ({page}) => { 
+const MapBox = ({ page }) => {
   return (
     <div className={styles.mapBox}>
       <h3>Kontaktiraj nas već danas</h3>
@@ -33,9 +34,7 @@ const MapBox = ({page}) => {
           </Link>
         </div>
       </div>
-      {page === 'o-nama' ? (
-        <div>O Nama Page</div>
-      ): null}
+      {page === "o-nama" ? <ONamaMapData /> : null}
     </div>
   );
 };

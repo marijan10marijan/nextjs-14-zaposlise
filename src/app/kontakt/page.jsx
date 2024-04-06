@@ -8,7 +8,7 @@ export const metadata = {
   description: "About Us",
 };
 
-const Kontakt = () => {
+const Kontakt = () => { 
   return (
     <>
       <KontaktHeader />

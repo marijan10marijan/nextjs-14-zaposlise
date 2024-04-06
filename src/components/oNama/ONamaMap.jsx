@@ -7,7 +7,7 @@ const ONamaMap = () => {
   return (
     <div className={styles.mapFull}>
       <div className={styles.mapBackground}>
-        <div className={`${styles.mapInsideContainer} ${styles.container}`}>
+        <div className={`${styles.mapInsideContainer} ${styles.container}`}> 
           <div className={styles.mapLeft}></div>
           <div className={styles.mapRight}>
             <MapBox page={"o-nama"} />

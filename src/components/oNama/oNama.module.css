@@ -4,7 +4,7 @@
   font-family: var(--ff-inter-regular-400);
 }
 .mapBackground {
-  background: url(https://zaposlise.hr/wp-content/uploads/2021/12/map.jpg)
+  background: url(https://zaposlise.hr/wp-content/uploads/2022/01/map-1.jpg)
     center center no-repeat;
   background-size: cover;
   padding-block: 80px;
@@ -106,10 +106,16 @@
   }
 }
 @media (max-width: 991px) {
+  .mapInsideContainer {
+    flex-direction: column;
+    padding-inline: 15px;
+  }
+  .mapLeft {
+    width: 100%;
+  }
+  .mapRight {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
-}
-@media (max-width: 590px) {
-}
-@media (max-width: 505px) {
 }

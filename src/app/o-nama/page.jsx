@@ -7,7 +7,7 @@ export const metadata = {
   description: "About Us",
 };
 
-const ONama = () => {
+const ONama = () => { 
   return (
     <>
       <KontaktMain

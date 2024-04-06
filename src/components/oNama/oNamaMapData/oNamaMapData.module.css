@@ -1,0 +1,21 @@
+.podaciTvrtke {
+}
+
+.podaciTvrtkeBox {
+  border-bottom: 1px solid #e2e2e2;
+  border-color: #e2e2e2;
+  margin-block-end: 20px;
+}
+
+.podaciTvrtkeBoxTitle {
+  font-size: 17px;
+  font-family: var(--ff-inter-bold-700);
+  color: rgb(34, 33, 50);
+}
+.podaciTvrtkeBoxText {
+  margin-block-end: 30px;
+  font-family: var(--ff-inter-regular-400);
+  font-size: 16px;
+  color: rgb(34, 33, 50);
+  line-height: 24px;
+}
