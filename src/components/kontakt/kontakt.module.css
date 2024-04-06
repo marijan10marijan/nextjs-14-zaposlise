@@ -306,9 +306,11 @@
   .kontaktDecoration {
     display: none;
   }
+
   .mapBackground {
     padding-block: 40px;
   }
+
   .mapLeft {
     flex: 0;
   }
