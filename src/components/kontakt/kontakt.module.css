@@ -307,7 +307,10 @@
 }
 @media (max-width: 767px) {
   .kontaktHeaderContainer {
-    min-height: 204px;
+    min-height: 174px;
+  }
+  .kontaktHeaderBackground {
+    height: 190px;
   }
   .kontaktDesc {
     padding-block-start: 10px;
