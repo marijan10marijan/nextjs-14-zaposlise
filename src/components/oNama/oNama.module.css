@@ -21,6 +21,10 @@
 .headerContainer {
   display: flex;
   align-items: center;
+  max-width: 1330px;
+  margin-inline: auto;
+  padding-inline: 15px;
+  scale: 0.8;
 }
 .headerContainerLeft,
 .headerContainerRight {
@@ -29,6 +33,10 @@
 .headerContainerLeft {
 }
 .headerContainerTitle {
+  font-size: 55px;
+  line-height: 1;
+  font-family: var(--ff-inter-bold-700);
+  padding-block-end: 20px;
 }
 .headerContainerText {
 }
@@ -115,8 +123,29 @@
 }
 
 /* BREAKPOINTS  *******************************************************************/
+@media (max-width: 1600px) {
+  .headerContainerTitle {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1290px) {
+  .header {
+    padding: 195px 0 70px;
+  }
+}
 
 @media (max-width: 1199px) {
+  .header {
+    padding: 145px 0 90px;
+    min-height: 463px;
+  }
+  .headerContainer {
+    scale: none;
+    max-width: 980px;
+  }
+  .headerContainerTitle {
+    font-size: 42px;
+  }
   .mapBox {
     width: 460px;
   }
@@ -157,7 +186,32 @@
     width: 100%;
   }
 }
+@media (max-width: 890px) {
+  .header {
+    min-height: 500px;
+  }
+}
 @media (max-width: 767px) {
+  .header {
+    text-align: center;
+    background: #fff
+      url(//zaposlise.hr/wp-content/themes/ngtheme/assets/css/../i/mobile-zaposlise-o-nama-naslovna@2x.jpg)
+      center bottom no-repeat;
+    background-size: contain;
+    padding: 80px 0 260px;
+  }
+  .headerContainer {
+    flex-direction: column;
+  }
+  .headerContainerLeft {
+    width: 100%;
+  }
+  .headerContainerRight {
+    flex: 0;
+  }
+  .headerContainerTitle {
+    font-size: 24px;
+  }
   .mapBackground {
     padding-block: 30px;
   }
