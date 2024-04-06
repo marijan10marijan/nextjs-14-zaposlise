@@ -35,7 +35,7 @@
 }
 .formBox input,
 .formBox textarea {
-  border: 1.6px solid rgb(226, 226, 233);
+  border: 2px solid rgb(226, 226, 233);
   border-radius: 0.55rem;
   font-size: 1.1rem;
   color: #606266;
@@ -53,7 +53,7 @@
 }
 .formBox input:focus,
 .formBox textarea:focus {
-  border: 1.6px solid #1565d8;
+  border: 2px solid #1565d8;
 }
 .formBox textarea {
   resize: none;
@@ -79,6 +79,7 @@
   border: 0;
   font-size: 21px;
   transition: all 200ms linear;
+  font-weight: 500;
   cursor: pointer;
 }
 
