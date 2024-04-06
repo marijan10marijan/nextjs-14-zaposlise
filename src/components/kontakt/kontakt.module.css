@@ -324,6 +324,15 @@
   .kontaktHeaderDecoration {
     display: none;
   }
+  .kontaktLeft {
+    width: 100%;
+  }
+  .kontaktTitle {
+    font-size: 28px;
+  }
+  .kontaktSubtitle {
+    font-size: 20px;
+  }
   .mapRight,
   .mapLeft {
     display: none;

@@ -127,4 +127,14 @@
     line-height: 20px;
     font-size: 20px;
   }
+  .formIme,
+  .formPrezime,
+  .formEmail,
+  .formPoruka,
+  .formTel {
+    width: 100%;
+  }
+  .formButton {
+    align-self: flex-start;
+  }
 }

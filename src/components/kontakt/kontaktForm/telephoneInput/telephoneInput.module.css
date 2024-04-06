@@ -41,3 +41,9 @@
 .formTelSelector input {
   padding-inline-start: 38px;
 }
+
+@media (max-width: 767px) {
+  .formTel {
+    width: 100%;
+  }
+}
