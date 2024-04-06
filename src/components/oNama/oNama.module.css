@@ -1,7 +1,46 @@
+/* O NAMA HEADER *******************************************************************/
+.header {
+  min-height: 496px;
+  width: 100%;
+  position: relative;
+  top: -75px;
+  padding: 135px 0 75px;
+}
+.headerBackground {
+  background: url("https://zaposlise.hr/wp-content/uploads/2023/08/zaposlise-o-nama-naslovna@2x-scaled.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+}
+.headerContainerLeft,
+.headerContainerRight {
+  flex: 1;
+}
+.headerContainerLeft {
+}
+.headerContainerTitle {
+}
+.headerContainerText {
+}
+.headerContainerLink {
+}
+
 /* O NAMA MAP *******************************************************************/
 .mapFull {
   width: 100%;
   font-family: var(--ff-inter-regular-400);
+  position: relative;
+  z-index: 2;
 }
 .mapBackground {
   background: url(https://zaposlise.hr/wp-content/uploads/2022/01/map-1.jpg)
