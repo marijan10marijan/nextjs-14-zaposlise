@@ -1,13 +1,11 @@
-.podaciTvrtke {
+.podaciTvrtke a {
+  color: green;
 }
 
 .podaciTvrtkeBox {
   border-bottom: 1px solid #e2e2e2;
   border-color: #e2e2e2;
   margin-block-end: 20px;
-}
-a {
-  color: green;
 }
 
 .podaciTvrtkeBoxTitle {
