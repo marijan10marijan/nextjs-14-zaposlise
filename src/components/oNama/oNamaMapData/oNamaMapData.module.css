@@ -1,5 +1,9 @@
 .podaciTvrtke a {
-  color: green;
+  color: #0c54ad;
+  transition: all 200ms linear;
+}
+.podaciTvrtke a:hover {
+  color: #1aa15f;
 }
 
 .podaciTvrtkeBox {
