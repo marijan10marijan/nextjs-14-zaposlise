@@ -49,7 +49,6 @@ const ONamaPrica = () => {
           </p>
           <p>Mi smo vaša podrška na ovom novom putovanju.</p>
         </div>
-        {/* <div className={styles.nasaPricaBoxTwoDecoration}></div> */}
       </div>
       <div className={styles.nasaPricaDecoration}></div>
     </main>

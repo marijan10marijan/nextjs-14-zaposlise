@@ -60,6 +60,15 @@
   background-color: #f9f9f9 !important;
   width: 100%;
   padding-block-start: 100px;
+  padding-block-end: 100px;
+  background: transparent
+    url("https://zaposlise.hr/wp-content/uploads/2021/11/bg1-2.jpg");
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  position: relative;
+  background-color: #f9f9f9;
 }
 
 .kontaktMain {
@@ -78,46 +87,8 @@
 }
 .kontaktRight {
   flex: 1;
-  align-self: flex-end;
-  aspect-ratio: 3/4;
-  display: block;
-  /* background: transparent
-    url("https://zaposlise.hr/wp-content/uploads/2021/11/img2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-  z-index: 0;
-  position: relative;
-}
-/* PROBA CODE **************************************************** */
-.kontaktRight:before {
-  content: "";
-  position: absolute;
-  background: url("https://zaposlise.hr/wp-content/uploads/2021/11/img2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: white;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
-  z-index: -1;
 }
 
-.kontaktDecoration {
-  position: absolute;
-  right: -65px;
-  bottom: -148px;
-  background: url(//zaposlise.hr/wp-content/themes/ngtheme/assets/css/../i/dotline3.png)
-    left top repeat;
-  width: 187px;
-  height: 318px;
-  color: #000;
-}
 /* KONTAKT TITLE AND SUBTITLE ****************************************************/
 .kontaktTitle {
   font-family: var(--ff-inter-bold-700);
@@ -290,6 +261,7 @@
   }
   .kontaktMainFull {
     margin-block-start: -50px;
+    background: none;
   }
 
   .kontaktMain {
@@ -301,7 +273,11 @@
     flex: auto;
   }
   .kontaktRight {
-    width: 845px;
+    background: url("https://zaposlise.hr/wp-content/uploads/2021/11/img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 844px;
     aspect-ratio: 1/1;
     align-self: flex-start;
     flex: auto;

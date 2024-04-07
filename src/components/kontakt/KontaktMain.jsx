@@ -11,7 +11,7 @@ const KontaktMain = ({ title, subtitle }) => {
           <p className={styles.kontaktSubtitle}>{subtitle}</p>
           <KontaktForm />
         </div>
-        <div className={styles.kontaktRight}></div>
+        <div className={styles.kontaktRight}></div> 
         <div className={styles.kontaktDecoration}></div>
       </div>
     </div>
