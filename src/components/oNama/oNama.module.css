@@ -30,8 +30,7 @@
 .headerContainerRight {
   flex: 1;
 }
-.headerContainerLeft {
-}
+
 .headerContainerTitle {
   font-size: 55px;
   line-height: 1;
@@ -39,8 +38,27 @@
   padding-block-end: 20px;
 }
 .headerContainerText {
+  font-size: 20px;
+  line-height: 29px;
+  color: rgb(0, 0, 0);
+  padding-block-end: 20px;
 }
 .headerContainerLink {
+  font-size: 26px;
+  padding: 22px 30px;
+  font-family: var(--ff-inter-medium-500);
+  background: #19bb70;
+  border: 0;
+  color: #fff;
+  border-radius: 6px;
+  margin: 0;
+  display: inline-block;
+  box-shadow: rgba(25, 187, 112, 0.26) 0 20px 27px;
+  line-height: 1;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  text-decoration: none;
 }
 
 /* O NAMA MAP *******************************************************************/
@@ -127,10 +145,29 @@
   .headerContainerTitle {
     font-size: 50px;
   }
+  .headerContainerLink {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1440px) {
+  .headerContainerText {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .headerContainerLink {
+    font-size: 22px;
+  }
 }
 @media (max-width: 1290px) {
   .header {
     padding: 195px 0 70px;
+  }
+  .headerContainerText {
+    font-size: 18px;
+  }
+  .headerContainerLink {
+    font-size: 20px;
+    padding: 20px 25px;
   }
 }
 
@@ -146,6 +183,11 @@
   .headerContainerTitle {
     font-size: 42px;
   }
+  .headerContainerText {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
   .mapBox {
     width: 460px;
   }
@@ -212,7 +254,21 @@
   .headerContainerTitle {
     font-size: 24px;
   }
+  .headerContainerText {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .headerContainerLink {
+    font-size: 16px;
+    padding: 14px 18px;
+  }
   .mapBackground {
     padding-block: 30px;
+  }
+}
+
+@media (max-width: 435px) {
+  .header {
+    min-height: 520px;
   }
 }
