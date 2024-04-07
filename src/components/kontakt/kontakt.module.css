@@ -334,6 +334,9 @@
   .kontaktLeft {
     width: 100%;
   }
+  .kontaktMainFull {
+    padding-block-end: 0px;
+  }
   .kontaktTitle {
     font-size: 28px;
   }
