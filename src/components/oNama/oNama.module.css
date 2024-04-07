@@ -65,12 +65,25 @@
 .nasaPrica {
   width: 100%;
   margin-block-start: -20px;
+  padding-block-end: 100px;
+  position: relative;
+}
+.nasaPricaDecoration {
+  position: absolute;
+  background: url("https://zaposlise.hr/wp-content/themes/ngtheme/assets/i/dotline3.png")
+    left top repeat;
+  height: 318px;
+  opacity: 0.5;
+  width: 157px;
+  right: 0;
+  bottom: -160px;
 }
 .nasaPricaBoxOne {
   max-width: 1064px;
   width: 100%;
   margin-inline: auto;
   padding-inline: 15px;
+  padding-block-end: 100px;
 }
 .nasaPricaBoxOneTitle {
   line-height: 1;
@@ -88,6 +101,44 @@
 .nasaPricaBoxOneText strong {
   font-family: var(--ff-inter-bold-700);
 }
+.nasaPricaBoxTwo {
+  max-width: 1064px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 15px;
+  position: relative;
+  display: flex;
+}
+.nasaPricaBoxTwoImage {
+  flex: 1;
+  height: 442px;
+  overflow: hidden;
+  position: relative;
+}
+.nasaPricaBoxTwoImage img {
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.nasaPricaBoxTwoContent {
+  flex: 1;
+}
+.nasaPricaBoxTwoDecoration {
+  position: absolute;
+  left: -100px;
+  scale: 0.8;
+  top: -20px;
+  background: url(//zaposlise.hr/wp-content/themes/ngtheme/assets/css/../i/dotline3.png)
+    left top repeat;
+  width: 268px;
+  height: 318px;
+  opacity: 0.5;
+}
+
 /* O NAMA MAP *******************************************************************/
 .mapFull {
   width: 100%;
@@ -199,6 +250,9 @@
     font-size: 20px;
     padding: 20px 25px;
   }
+  .nasaPricaBoxOne {
+    padding-block-end: 80px;
+  }
   .nasaPricaBoxOneTitle {
     font-size: 40px;
   }
@@ -223,6 +277,9 @@
 
   .nasaPricaBoxOneTitle {
     font-size: 34px;
+  }
+  .nasaPricaBoxTwoDecoration {
+    scale: 1;
   }
   .mapBox {
     width: 460px;
@@ -252,6 +309,31 @@
   }
 }
 @media (max-width: 991px) {
+  .nasaPrica {
+    padding-block-end: 200px;
+  }
+  .nasaPricaBoxOne {
+    padding-block-end: 50px;
+  }
+  .nasaPricaBoxTwo {
+    flex-direction: column;
+  }
+  .nasaPricaBoxTwoImage {
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    flex: auto;
+    justify-self: flex-start;
+  }
+  .nasaPricaBoxTwoImage img {
+    object-fit: contain;
+  }
+  .nasaPricaDecoration {
+    bottom: -90px;
+  }
+  .nasaPricaBoxTwoDecoration {
+    top: 30px;
+  }
   .mapInsideContainer {
     flex-direction: column;
     padding-inline: 15px;
@@ -299,8 +381,17 @@
     font-size: 16px;
     padding: 14px 18px;
   }
+  .nasaPrica {
+    padding-block-end: 100px;
+  }
+  .nasaPricaBoxOne {
+    padding-block-end: 0px;
+  }
   .nasaPricaBoxOneTitle {
     font-size: 28px;
+  }
+  .nasaPricaDecoration {
+    display: none;
   }
   .mapBackground {
     padding-block: 30px;
