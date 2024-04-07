@@ -238,6 +238,9 @@
   .kontaktMainFull {
     padding-block-start: 0px;
   }
+  .kontaktMain {
+    padding-block-start: 50px;
+  }
 
   .kontaktDecoration {
     right: 20px;
@@ -289,6 +292,7 @@
   .kontaktMain {
     flex-direction: column;
     padding: 0px;
+    padding-block-start: 50px;
   }
   .kontaktLeft {
     flex: auto;
