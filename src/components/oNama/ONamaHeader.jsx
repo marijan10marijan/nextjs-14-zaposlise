@@ -3,7 +3,7 @@ import styles from "./oNama.module.css";
 import Link from "next/link";
 
 const ONamaHeader = () => {
-  return (
+  return ( 
     <section className={styles.header}>
       <div className={styles.headerBackground}></div>
       <div className={styles.headerContainer}>

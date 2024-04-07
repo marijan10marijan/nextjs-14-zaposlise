@@ -53,12 +53,16 @@
   border-radius: 6px;
   margin: 0;
   display: inline-block;
+  cursor: pointer;
   box-shadow: rgba(25, 187, 112, 0.26) 0 20px 27px;
   line-height: 1;
   transition: all 200ms linear;
   -moz-transition: all 200ms linear;
   -webkit-transition: all 200ms linear;
   text-decoration: none;
+}
+.headerContainerLink:hover {
+  background-color: #000;
 }
 
 /* NASA PRICA *******************************************************************/
