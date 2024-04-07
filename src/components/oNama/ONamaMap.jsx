@@ -40,6 +40,7 @@ const ONamaMap = () => {
               <p>E-mail:</p>
               <Link
                 className={styles.mapEmailLink}
+                target="_blank"
                 href="mailto:podrska@zaposlise.hr"
               >
                 podrska@zaposlise.hr

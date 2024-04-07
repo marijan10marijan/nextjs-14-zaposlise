@@ -27,6 +27,7 @@ const ONamaPrica = () => {
             alt="slika poslovnog sastanka"
             fill
           />
+          <div className={styles.nasaPricaBoxTwoDecoration}></div>
         </div>
         <div className={styles.nasaPricaBoxTwoContent}>
           <h3>Što nas pokreće?</h3>
@@ -48,7 +49,7 @@ const ONamaPrica = () => {
           </p>
           <p>Mi smo vaša podrška na ovom novom putovanju.</p>
         </div>
-        <div className={styles.nasaPricaBoxTwoDecoration}></div>
+        {/* <div className={styles.nasaPricaBoxTwoDecoration}></div> */}
       </div>
       <div className={styles.nasaPricaDecoration}></div>
     </main>
