@@ -76,7 +76,7 @@
   line-height: 1;
   font-size: 50px;
   font-family: var(--ff-inter-bold-700);
-  margin-block: 20px;
+  margin-block: clamp(0.8rem, 4vw, 1.2rem);
   color: rgb(34, 33, 50);
 }
 .nasaPricaBoxOneText {
@@ -310,5 +310,8 @@
 @media (max-width: 435px) {
   .header {
     min-height: 520px;
+  }
+  .nasaPricaBoxOneText {
+    margin-block-end: 36px;
   }
 }
