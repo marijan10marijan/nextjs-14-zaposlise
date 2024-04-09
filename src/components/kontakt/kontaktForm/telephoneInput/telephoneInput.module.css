@@ -61,7 +61,7 @@
   border: 1px solid #ccc;
   white-space: nowrap;
   overflow-y: scroll;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 1000;
 }
 .hiddenCountriesBox {
