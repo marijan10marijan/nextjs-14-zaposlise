@@ -52,7 +52,7 @@ const TelephoneInput = ({ countries }) => {
           countries={countries}
           country={country}
           setCountry={setCountry}
-          isOpenCountryBox={isOpenCountryBox}
+          // isOpenCountryBox={isOpenCountryBox}
         />
       </div>
     </div>
