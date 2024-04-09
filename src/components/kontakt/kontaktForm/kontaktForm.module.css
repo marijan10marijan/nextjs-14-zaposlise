@@ -68,7 +68,7 @@
 }
 
 .formButton {
-  display: inline-block;
+  display: inline-block; 
   background-color: #409eff;
   color: #ffffff;
   box-shadow: rgba(25, 187, 112, 0.26) 0 20px 27px;

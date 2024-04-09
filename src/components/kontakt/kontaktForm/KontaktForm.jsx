@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./kontaktForm.module.css";
-import TelephoneInput from "./telephoneInput/TelephoneInput";
+import Telephone from "./telephoneInput/Telephone";
 
 const KontaktForm = () => {
   return (
@@ -29,7 +29,7 @@ const KontaktForm = () => {
           <input type="email" id="email" placeholder="E-mail adresa" required />
         </div>
 
-        <TelephoneInput />
+        <Telephone />
       </div>
       {/* TRECI FORM BOX ************************ **************************/}
       <div className={styles.formBox}>
