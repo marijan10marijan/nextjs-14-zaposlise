@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import styles from "./telephoneInput.module.css";
 import AllCountries from "./AllCountries";
+import Image from "next/image";
 
 const TelephoneInput = ({ countries }) => {
   const [isOpenCountryBox, setIsOpenCountryBox] = useState(false);
-  const [country, setCountry] = useState(countries[0].flags.svg);
-  const [countryData, setCountryData] = useState("Hrvatska");
+  const [country, setCountry] = useState(countries[2]?.flags?.svg);
 
   const changeOpenState = () => {
     setIsOpenCountryBox((prev) => !prev);
@@ -31,7 +31,7 @@ const TelephoneInput = ({ countries }) => {
           }
           onClick={changeOpenState}
         >
-          <img src={country} alt="zastava države" />
+          <Image width={20} height={11} src={country} alt="zastava države" />
           <p></p>
         </div>
         <input

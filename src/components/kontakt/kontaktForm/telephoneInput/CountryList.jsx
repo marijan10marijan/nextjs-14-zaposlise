@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./telephoneInput.module.css";
 
-const CountryList = ({ countryData, setCountryData, countries }) => {
+const CountryList = ({ setCountryData, countries }) => {
   return (
     <>
       {countries.map((country) => (
