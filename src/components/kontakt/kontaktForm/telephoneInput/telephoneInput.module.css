@@ -55,13 +55,13 @@
 
 .countriesBox {
   position: fixed;
-
-  inset: 50px;
+  inset: 25px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border: 1px solid #ccc;
   white-space: nowrap;
   overflow-y: scroll;
+  overflow: hidden;
   z-index: 1000;
 }
 .hiddenCountriesBox {
