@@ -51,7 +51,6 @@ const TelephoneInput = ({ countries }) => {
         <AllCountries
           countries={countries}
           countryData={countryData}
-          setCountryData={setCountryData}
           isOpenCountryBox={isOpenCountryBox}
         />
       </div>

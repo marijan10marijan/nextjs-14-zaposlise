@@ -2,8 +2,8 @@ import React from "react";
 
 import CountryList from "./CountryList";
 
-const AllCountries = ({ countries, setCountryData }) => {
-  return <CountryList countries={countries} setCountryData={setCountryData} />;
+const AllCountries = ({ countries, setCountry }) => {
+  return <CountryList countries={countries} setCountry={setCountry} />;
 };
 
 export default AllCountries;
