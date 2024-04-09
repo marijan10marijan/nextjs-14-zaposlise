@@ -88,6 +88,8 @@
   color: rgb(34, 33, 50);
   font-size: 20px;
   text-wrap: wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .countryListElementCode {
   color: #999;
