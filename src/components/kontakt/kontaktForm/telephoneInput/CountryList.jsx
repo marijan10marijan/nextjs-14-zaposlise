@@ -14,6 +14,8 @@ const CountryList = ({ country, setCountry, countries }) => {
             />
             <p className={styles.countryListElementName}>
               {country.name.common}{" "}
+            </p>
+            <p>
               {country.name.nativeName?.hrv?.common
                 ? `(${country.name.nativeName.hrv.common})`
                 : ""}
@@ -28,9 +30,6 @@ const CountryList = ({ country, setCountry, countries }) => {
                 : ""}
               {country.name.nativeName?.deu?.common
                 ? `(${country.name.nativeName.deu.common})`
-                : ""}
-              {country.name.nativeName?.bos?.common
-                ? `(${country.name.nativeName.bos.common})`
                 : ""}
             </p>
             <p className={styles.countryListElementCode}>

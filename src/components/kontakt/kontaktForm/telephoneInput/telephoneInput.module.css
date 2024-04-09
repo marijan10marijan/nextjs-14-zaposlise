@@ -83,6 +83,7 @@
 }
 .countryListElement p {
   margin-inline-end: 6px;
+  font-size: 20px;
 }
 .countryListElementName {
   color: rgb(34, 33, 50);
