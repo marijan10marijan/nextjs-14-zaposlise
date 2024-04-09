@@ -5,20 +5,20 @@ import AllCountries from "./AllCountries";
 
 const TelephoneInput = ({ countries }) => {
   const [isOpenCountryBox, setIsOpenCountryBox] = useState(false);
-  const [country, setCountry] = useState("HR");
+  const [country, setCountry] = useState(countries[0].flags.svg);
   const [countryData, setCountryData] = useState("Hrvatska");
 
   const changeOpenState = () => {
     setIsOpenCountryBox((prev) => !prev);
   };
+  window.addEventListener("click", (e) => {
+    if (!e.target.closest(`.${styles.formTel}`)) {
+      setIsOpenCountryBox(false);
+    }
+  });
+
   return (
-    <div
-      className={
-        isOpenCountryBox
-          ? `${styles.relative} ${styles.formTel}`
-          : `${styles.formTel}`
-      }
-    >
+    <div className={styles.formTel}>
       <label htmlFor="tel">
         Telefon <span>*</span>
       </label>
@@ -31,7 +31,8 @@ const TelephoneInput = ({ countries }) => {
           }
           onClick={changeOpenState}
         >
-          {country}
+          <img src={country} alt="zastava države" />
+          <p></p>
         </div>
         <input
           type="tel"
@@ -39,20 +40,20 @@ const TelephoneInput = ({ countries }) => {
           placeholder="Broj mobitela / fiksnog telefona"
           required
         />
-        <div
-          className={
-            isOpenCountryBox
-              ? `${styles.countriesBox}`
-              : `${styles.countriesBox} ${styles.hiddenCountriesBox}`
-          }
-        >
-          <AllCountries
-            countries={countries}
-            countryData={countryData}
-            setCountryData={setCountryData}
-            isOpenCountryBox={isOpenCountryBox}
-          />
-        </div>
+      </div>
+      <div
+        className={
+          isOpenCountryBox
+            ? `${styles.countriesBox}`
+            : `${styles.countriesBox} ${styles.hiddenCountriesBox}`
+        }
+      >
+        <AllCountries
+          countries={countries}
+          countryData={countryData}
+          setCountryData={setCountryData}
+          isOpenCountryBox={isOpenCountryBox}
+        />
       </div>
     </div>
   );

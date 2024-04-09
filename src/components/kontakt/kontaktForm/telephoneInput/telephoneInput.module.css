@@ -4,9 +4,6 @@
   gap: 0.2rem;
   flex: 1;
 }
-.relative {
-  position: relative;
-}
 
 .formTelSelector {
   position: relative;
@@ -15,12 +12,9 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 30px;
+  width: 45px;
   padding-inline: 6px;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   caret-color: #606266;
@@ -35,25 +29,68 @@
   background-repeat: no-repeat;
   background-color: rgba(25, 187, 112, 0.1);
   background-position: left 50% top 50%;
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.formTelCountry img {
+  width: 20px;
+  height: 15px;
+  object-fit: contain;
+}
+.formTelCountry p {
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
 }
 .isActiveCountry {
   background-color: rgba(25, 187, 112, 0.5) !important;
 }
 .formTelSelector input {
-  padding-inline-start: 38px;
+  padding-inline-start: 48px;
 }
 
 .countriesBox {
-  position: absolute;
-  height: 150px;
-  width: 500px;
-  bottom: -150px;
-  background-color: white;
-  color: darkgray;
+  position: fixed;
+
+  inset: 50px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  white-space: nowrap;
   overflow-y: scroll;
+  z-index: 1000;
 }
 .hiddenCountriesBox {
   display: none;
+}
+.countryListElement {
+  padding: 5px 10px;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+.countryListElement img {
+  width: 20px;
+  height: 11px;
+  object-fit: contain;
+  margin-inline-end: 6px;
+}
+.countryListElement p {
+  margin-inline-end: 6px;
+}
+.countryListElementName {
+  color: rgb(34, 33, 50);
+  font-size: 20px;
+}
+.countryListElementCode {
+  color: #999;
+  font-size: 20px;
 }
 
 .countryListElement {
