@@ -32,9 +32,6 @@ const CountryList = ({ country, setCountry, countries }) => {
               {country.name.nativeName?.bos?.common
                 ? `(${country.name.nativeName.bos.common})`
                 : ""}
-              {country.name.nativeName?.srp?.common
-                ? `(${country.name.nativeName.srp.common})`
-                : ""}
             </p>
             <p className={styles.countryListElementCode}>
               {country.idd?.root}

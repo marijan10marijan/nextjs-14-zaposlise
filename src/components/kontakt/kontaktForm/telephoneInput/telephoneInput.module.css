@@ -87,6 +87,7 @@
 .countryListElementName {
   color: rgb(34, 33, 50);
   font-size: 20px;
+  text-wrap: wrap;
 }
 .countryListElementCode {
   color: #999;
