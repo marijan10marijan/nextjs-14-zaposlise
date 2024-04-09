@@ -11,11 +11,11 @@ const TelephoneInput = ({ countries }) => {
   const changeOpenState = () => {
     setIsOpenCountryBox((prev) => !prev);
   };
-  window.addEventListener("click", (e) => {
-    if (!e.target.closest(`.${styles.formTel}`)) {
-      setIsOpenCountryBox(false);
-    }
-  });
+  // window.addEventListener("click", (e) => {
+  //   if (!e.target.closest(`.${styles.formTel}`)) {
+  //     setIsOpenCountryBox(false);
+  //   }
+  // });
 
   return (
     <div className={styles.formTel}>
@@ -52,7 +52,6 @@ const TelephoneInput = ({ countries }) => {
           countries={countries}
           country={country}
           setCountry={setCountry}
-          // isOpenCountryBox={isOpenCountryBox}
         />
       </div>
     </div>
