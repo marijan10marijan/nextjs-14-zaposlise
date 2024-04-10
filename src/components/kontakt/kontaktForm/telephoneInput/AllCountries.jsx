@@ -4,16 +4,18 @@ import CountryList from "./CountryList";
 
 const AllCountries = ({
   countries,
-  country,
   setCountry,
   setIsOpenCountryBox,
+  activeCountry,
+  setActiveCountry,
 }) => {
   return (
     <CountryList
       countries={countries}
-      country={country}
       setCountry={setCountry}
       setIsOpenCountryBox={setIsOpenCountryBox}
+      activeCountry={activeCountry}
+      setActiveCountry={setActiveCountry}
     />
   );
 };

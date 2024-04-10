@@ -1,18 +1,20 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./telephoneInput.module.css";
 import AllCountries from "./AllCountries";
-import Image from "next/image";
 
 const TelephoneInput = ({ countries }) => {
   const [isOpenCountryBox, setIsOpenCountryBox] = useState(false);
-  const [country, setCountry] = useState(countries[2]?.flags?.svg);
+  const [country, setCountry] = useState(countries[11]?.flags?.svg);
+  const [activeCountry, setActiveCountry] = useState(11);
+  const boxRef = useRef(null);
 
   const changeOpenState = () => {
+    boxRef.current.focus();
     setIsOpenCountryBox((prev) => !prev);
   };
 
-  // document.addEventListener("click", (e) => {
+  // window.addEventListener("click", (e) => {
   //   if (!e.target.closest(`.${styles.formTel}`)) {
   //     setIsOpenCountryBox(false);
   //   }
@@ -47,6 +49,8 @@ const TelephoneInput = ({ countries }) => {
         />
       </div>
       <div
+        ref={boxRef}
+        tabIndex={0}
         className={
           isOpenCountryBox
             ? `${styles.countriesBox}`
@@ -55,9 +59,10 @@ const TelephoneInput = ({ countries }) => {
       >
         <AllCountries
           countries={countries}
-          country={country}
           setCountry={setCountry}
           setIsOpenCountryBox={setIsOpenCountryBox}
+          activeCountry={activeCountry}
+          setActiveCountry={setActiveCountry}
         />
       </div>
     </div>

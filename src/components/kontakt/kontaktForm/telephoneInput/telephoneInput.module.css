@@ -59,10 +59,12 @@
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border: 1px solid #ccc;
+  outline: none;
   white-space: nowrap;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   z-index: 1000;
+  overscroll-behavior: contain;
 }
 .hiddenCountriesBox {
   display: none;
@@ -77,6 +79,9 @@
   cursor: pointer;
 }
 .countryListElement:hover {
+  background-color: rgb(226, 226, 233);
+}
+.activeCountry {
   background-color: rgb(226, 226, 233);
 }
 .countryListElement img {

@@ -2,22 +2,31 @@ import React from "react";
 import styles from "./telephoneInput.module.css";
 
 const CountryList = ({
-  country,
   setCountry,
   countries,
   setIsOpenCountryBox,
+  activeCountry,
+  setActiveCountry,
 }) => {
   return (
     <>
-      {countries.map((country) => (
+      {countries.map((country, index) => (
         <ul
           onClick={() => setIsOpenCountryBox(false)}
           key={country.name.common}
           className={styles.countryList}
         >
           <li
-            onClick={() => setCountry(country.flags.svg)}
-            className={styles.countryListElement}
+            onClick={() =>
+              `${setCountry(country.flags.svg)} ${setActiveCountry(
+                index
+              )} `
+            }
+            className={
+              activeCountry === index
+                ? `${styles.countryListElement} ${styles.activeCountry}`
+                : `${styles.countryListElement}`
+            }
           >
             <img
               src={country.flags.svg}
