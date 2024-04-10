@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./telephoneInput.module.css";
 import AllCountries from "./AllCountries";
 import Image from "next/image";
@@ -11,7 +11,8 @@ const TelephoneInput = ({ countries }) => {
   const changeOpenState = () => {
     setIsOpenCountryBox((prev) => !prev);
   };
-  // window.addEventListener("click", (e) => {
+
+  // document.addEventListener("click", (e) => {
   //   if (!e.target.closest(`.${styles.formTel}`)) {
   //     setIsOpenCountryBox(false);
   //   }
@@ -31,7 +32,11 @@ const TelephoneInput = ({ countries }) => {
           }
           onClick={changeOpenState}
         >
-          <Image width={20} height={11} src={country} alt="zastava države" />
+          <img
+            style={{ width: "20px", height: "11px" }}
+            src={country}
+            alt="zastava države"
+          />
           <p></p>
         </div>
         <input
@@ -52,6 +57,7 @@ const TelephoneInput = ({ countries }) => {
           countries={countries}
           country={country}
           setCountry={setCountry}
+          setIsOpenCountryBox={setIsOpenCountryBox}
         />
       </div>
     </div>
