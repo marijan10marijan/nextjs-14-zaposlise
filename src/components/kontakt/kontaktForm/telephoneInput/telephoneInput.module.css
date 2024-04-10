@@ -74,6 +74,10 @@
   align-items: center;
   flex-wrap: wrap;
   line-height: 1.5;
+  cursor: pointer;
+}
+.countryListElement:hover {
+  background-color: rgb(226, 226, 233);
 }
 .countryListElement img {
   width: 20px;
@@ -105,6 +109,27 @@
   height: 50px;
 }
 
+@media (max-width: 1440px) {
+  .countryListElement p,
+  .countryListElementName {
+    font-size: 19px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .countryListElement p,
+  .countryListElementName {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .countryListElement p,
+  .countryListElementName {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 @media (max-width: 767px) {
   .formTel {
     width: 100%;
