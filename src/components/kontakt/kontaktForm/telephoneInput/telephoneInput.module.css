@@ -82,10 +82,10 @@
   cursor: pointer;
 }
 .countryListElement:hover {
-  background-color: rgb(226, 226, 233);
+  background-color: rgb(243, 243, 246);
 }
 .activeCountry {
-  background-color: rgb(226, 226, 233);
+  background-color: rgb(243, 243, 246);
 }
 .countryListElement img {
   width: 20px;
