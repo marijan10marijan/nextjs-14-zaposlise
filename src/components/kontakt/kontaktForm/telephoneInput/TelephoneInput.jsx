@@ -1,27 +1,28 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./telephoneInput.module.css";
 import AllCountries from "./AllCountries";
+import useClickOutside from "@/utils/outsideClick";
 
 const TelephoneInput = ({ countries }) => {
   const [isOpenCountryBox, setIsOpenCountryBox] = useState(false);
   const [country, setCountry] = useState(countries[11]?.flags?.svg);
   const [activeCountry, setActiveCountry] = useState(11);
   const boxRef = useRef(null);
+  const inputRef = useRef(null);
+  const containerRef = useRef(null);
+
+  useClickOutside(containerRef, () => {
+    setIsOpenCountryBox(false); // Close the div when clicking outside
+  });
 
   const changeOpenState = () => {
     boxRef.current.focus();
     setIsOpenCountryBox((prev) => !prev);
   };
 
-  // window.addEventListener("click", (e) => {
-  //   if (!e.target.closest(`.${styles.formTel}`)) {
-  //     setIsOpenCountryBox(false);
-  //   }
-  // });
-
   return (
-    <div className={styles.formTel}>
+    <div className={styles.formTel} ref={containerRef}>
       <label htmlFor="tel">
         Telefon <span>*</span>
       </label>
@@ -46,6 +47,7 @@ const TelephoneInput = ({ countries }) => {
           id="tel"
           placeholder="Broj mobitela / fiksnog telefona"
           required
+          ref={inputRef}
         />
       </div>
       <div
@@ -63,6 +65,7 @@ const TelephoneInput = ({ countries }) => {
           setIsOpenCountryBox={setIsOpenCountryBox}
           activeCountry={activeCountry}
           setActiveCountry={setActiveCountry}
+          inputRef={inputRef}
         />
       </div>
     </div>

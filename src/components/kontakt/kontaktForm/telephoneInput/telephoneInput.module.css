@@ -8,6 +8,9 @@
 .formTelSelector {
   position: relative;
 }
+.formTelSelector input:focus {
+  border: 2px solid #1565d8;
+}
 .formTelCountry {
   position: absolute;
   top: 0px;
@@ -138,5 +141,8 @@
 @media (max-width: 767px) {
   .formTel {
     width: 100%;
+  }
+  .countryListElement:hover {
+    background-color: transparent;
   }
 }

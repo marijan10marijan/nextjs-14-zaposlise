@@ -7,6 +7,7 @@ const CountryList = ({
   setIsOpenCountryBox,
   activeCountry,
   setActiveCountry,
+  inputRef,
 }) => {
   return (
     <>
@@ -20,7 +21,7 @@ const CountryList = ({
             onClick={() =>
               `${setCountry(country.flags.svg)} ${setActiveCountry(
                 index
-              )} `
+              )}  ${inputRef.current.focus()}`
             }
             className={
               activeCountry === index

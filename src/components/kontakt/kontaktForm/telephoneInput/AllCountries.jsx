@@ -8,6 +8,7 @@ const AllCountries = ({
   setIsOpenCountryBox,
   activeCountry,
   setActiveCountry,
+  inputRef
 }) => {
   return (
     <CountryList
@@ -16,6 +17,7 @@ const AllCountries = ({
       setIsOpenCountryBox={setIsOpenCountryBox}
       activeCountry={activeCountry}
       setActiveCountry={setActiveCountry}
+      inputRef={inputRef}
     />
   );
 };
