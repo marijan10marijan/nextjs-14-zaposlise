@@ -12,22 +12,24 @@ const CjenikCard = ({
 }) => {
   return (
     <article className={styles.cjenikCard}>
-      <div className={styles.cjenikCardData}>
-        <p>{name}</p>
-        <p>
-          Ušteda{" "}
-          <span>{category === "oglas" ? oglasiSavings : paketiSavings}%</span>
-        </p>
-        <div className={styles.cjenikCardPrice}>
-          <p>{price}</p>
-          {oldPrice ? <p>{oldPrice}</p> : null}
+      <div className={styles.cjenikCardTop}>
+        <div className={styles.cjenikCardTopData}>
+          <p className={styles.cjenikCardTopDataCategory}>{name}</p>
+          <p className={styles.cjenikCardTopDataSavings}>
+            Ušteda{" "}
+            <span>{category === "oglas" ? oglasiSavings : paketiSavings}%</span>
+          </p>
+        </div>
+        <div className={styles.cjenikCardTopPrice}>
+          <p>€{price}</p>
+          {oldPrice ? <p>€{oldPrice}</p> : null}
         </div>
       </div>
       <ul>
         {features.map((feature) => (
           <li key={feature}>
             <img
-                className={styles.cjenikCardIcon}
+              className={styles.cjenikCardIcon}
               src="https://zaposlise.hr/wp-content/themes/ngtheme/assets/sass/../../assets/i/square-checkbox-solid@2x.png"
               alt="ikona kvačice"
             />

@@ -55,7 +55,7 @@ const Cjenik = () => {
               }
               onClick={handleClick}
             >
-              Po Oglasu
+              Po oglasu
             </button>
             <button
               className={

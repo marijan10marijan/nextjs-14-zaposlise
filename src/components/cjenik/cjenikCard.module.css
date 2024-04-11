@@ -8,8 +8,39 @@
   box-shadow: rgba(16, 24, 40, 0.08) 0 16px 12px;
   border-radius: 1rem;
 }
+.cjenikCardTop {
+  display: flex;
+  flex-direction: column;
+}
 
-.cjenikCardData {
+.cjenikCardTopData {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ff-inter-semi-bold-600);
+  font-size: 1.25rem;
+}
+.cjenikCardTopDataCategory {
+  color: #1565d8;
+  font-size: 1.25rem;
+  font-family: var(--ff-inter-semi-bold-600);
+  line-height: 29px;
+}
+.cjenikCardTopDataSavings {
+  background-color: #f3be23;
+  padding: 0 0.625em;
+  border-radius: 0.5em;
+  color: #785900;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 29px;
+}
+.cjenikCardTopPrice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block-start: 0.5rem;
 }
 
 .cjenikCard ul {
@@ -59,5 +90,29 @@
   color: #858597;
 }
 
+@media (max-width: 1440px) {
+  .cjenikCardTopDataCategory,
+  .cjenikCardTopDataSavings {
+    line-height: 24px;
+  }
+}
 @media (max-width: 1199px) {
+  .cjenikCardTopDataCategory,
+  .cjenikCardTopDataSavings {
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .cjenikCardTopDataCategory {
+    line-height: 1;
+  }
+  .cjenikCardTopDataSavings {
+    line-height: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .cjenikCardTopPrice {
+    flex-direction: column;
+    align-items: start;
+  }
 }
