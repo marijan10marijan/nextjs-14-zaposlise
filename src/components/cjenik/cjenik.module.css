@@ -119,8 +119,10 @@
 @media (max-width: 991px) {
   .cjenikPaketi {
     grid-template-columns: revert;
-    grid-template-rows: 1fr 1fr;
     grid-auto-flow: row;
+  }
+  .cjenikPaketiButtons {
+    margin-block-end: 20px;
   }
   .cjenikPaketiRange {
     flex-direction: column;
