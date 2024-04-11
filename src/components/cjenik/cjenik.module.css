@@ -94,6 +94,9 @@
 
 /* CJENIK CARDS *************************************************************************************** */
 .cjenikCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(342px, 100%), 1fr));
+  gap: clamp(1rem, 5vw, 3rem);
 }
 
 /* CJENIK BOXES ************************************************************************************ */

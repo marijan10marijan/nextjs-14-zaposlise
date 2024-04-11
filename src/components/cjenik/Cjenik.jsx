@@ -9,7 +9,7 @@ import CjenikFooter from "./CjenikFooter";
 const Cjenik = () => {
   const [activeButton, setActiveButton] = useState("oglasiButton");
   const [activeCards, setActiveCards] = useState("oglasi");
-  const [brojOglasa, setBrojOglasa] = useState(30);
+  const [brojOglasa, setBrojOglasa] = useState(10);
   const [oglasiSavings, oglasiSetSavings] = useState(0);
   const [paketiSavings, paketiSetSavings] = useState(5);
   const [prices, setPrices] = useState({

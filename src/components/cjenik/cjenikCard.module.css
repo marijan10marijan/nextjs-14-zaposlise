@@ -1,14 +1,63 @@
 .cjenikCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: #fff;
+  padding: clamp(1.25rem, 5vw, 2.5rem) clamp(1rem, 5vw, 2rem);
+  display: grid;
+  grid-template-rows: min-content min-content auto min-content;
+  gap: clamp(1rem, 5vw, 2rem);
+  border: 1px solid #eaecf0;
+  box-shadow: rgba(16, 24, 40, 0.08) 0 16px 12px;
+  border-radius: 1rem;
 }
 
-.cjenikCardTop {
+.cjenikCardData {
 }
 
-.cjenikCardBottom {
+.cjenikCard ul {
+  display: grid;
+  gap: 1rem;
 }
-.cjenikCardTopData{
-    
+.cjenikCard ul li {
+  display: flex;
+  gap: 0.75rem;
+  color: #858597;
+  font-size: 1rem;
+  align-items: start;
+}
+.cjenikCardIcon {
+  width: 1.5rem;
+  aspect-ratio: 1;
+}
+.cjenikCardListElement {
+  line-height: 1.4;
+}
+.cjenikCard button {
+  background-color: #19bb70 !important;
+  display: grid !important;
+  place-content: center !important;
+  padding: 0.625em 1.3125em !important;
+  outline: 2px solid #19bb70;
+  border: 0 !important;
+  border-radius: 0.75em !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  margin-top: auto;
+  font-family: var(--ff-inter-medium-500);
+  width: 100%;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+.cjenikCard button:hover {
+  background-color: #fff !important;
+  outline: 2px solid #222132 !important;
+  color: #222132 !important;
+  transition: all 0.15s ease-in-out;
+}
+.cjenikCardSmallParagraph {
+  font-size: 0.75rem !important;
+  padding: 0 !important;
+  line-height: 1.5;
+  color: #858597;
+}
+
+@media (max-width: 1199px) {
 }
