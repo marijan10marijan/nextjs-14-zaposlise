@@ -122,7 +122,7 @@
     grid-auto-flow: row;
   }
   .cjenikPaketiButtons {
-    margin-block-end: 20px;
+    margin-block: 20px;
   }
   .cjenikPaketiRange {
     flex-direction: column;
