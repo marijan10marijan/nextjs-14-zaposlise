@@ -1,0 +1,14 @@
+.cjenikCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cjenikCardTop {
+}
+
+.cjenikCardBottom {
+}
+.cjenikCardTopData{
+    
+}

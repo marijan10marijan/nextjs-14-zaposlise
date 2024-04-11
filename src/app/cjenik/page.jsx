@@ -1,3 +1,4 @@
+import Cjenik from "@/components/cjenik/Cjenik";
 import React from "react";
 
 export const metadata = {
@@ -6,8 +7,8 @@ export const metadata = {
     "Pronađi novog kandidata za posao jednostavnim Swajpom na Zaposlise.hr portalu i mobilnoj aplikaciji. Dogovori sastanak i saznaj više.",
 };
 
-const Cjenik = () => {
-  return <div>Cjenik</div>;
+const CjenikPage = () => {
+  return <Cjenik />;
 };
 
-export default Cjenik;
+export default CjenikPage;
