@@ -10,8 +10,8 @@ const Cjenik = () => {
   const [activeButton, setActiveButton] = useState("oglasiButton");
   const [activeCards, setActiveCards] = useState("oglasi");
   const [brojOglasa, setBrojOglasa] = useState(10);
-  const [oglasiSavings, oglasiSetSavings] = useState(0);
-  const [paketiSavings, paketiSetSavings] = useState(5);
+  const [oglasiSavings, setOglasiSavings] = useState(0);
+  const [paketiSavings, setPaketiSavings] = useState(brojOglasa / 2);
   const [prices, setPrices] = useState({
     click: 87,
     swipe: 227,
@@ -27,17 +27,32 @@ const Cjenik = () => {
       setActiveButton("oglasiButton");
     }
   };
+  //   let savingsPriceOglas;
 
-  let savingsPrice;
+  //   if (oglasiSavings > 0) {
+  //     savingsPriceOglas = (prices.click * brojOglasa * oglasiSavings) / 100;
+  //   } else {
+  //     savingsPriceOglas = 0;
+  //   }
+  //   const newPriceClickOglas = prices.click - savingsPriceOglas;
+  //   const newPriceSwipeOglas = prices.swipe - savingsPriceOglas;
+  //   const newPriceMatchOglas = prices.match - savingsPriceOglas;
+
+  let newPriceClickPaket;
+  let newPriceSwipePaket;
+  let newPriceMatchPaket;
 
   if (paketiSavings > 0) {
-    savingsPrice = (prices.click * brojOglasa * paketiSavings) / 100;
-  } else {
-    savingsPrice = 0;
+    newPriceClickPaket =
+      prices.click * brojOglasa -
+      (prices.click * brojOglasa * paketiSavings) / 100;
+    newPriceSwipePaket =
+      prices.swipe * brojOglasa -
+      (prices.swipe * brojOglasa * paketiSavings) / 100;
+    newPriceMatchPaket =
+      prices.match * brojOglasa -
+      (prices.match * brojOglasa * paketiSavings) / 100;
   }
-  const newPriceClick = prices.click * brojOglasa - savingsPrice;
-  const newPriceSwipe = prices.swipe * brojOglasa - savingsPrice;
-  const newPriceMatch = prices.match * brojOglasa - savingsPrice;
 
   return (
     <section className={styles.cjenik}>
@@ -71,16 +86,31 @@ const Cjenik = () => {
           <div className={styles.cjenikPaketiRange}>
             <p>Broj oglasa godišnje</p>
             <div className={styles.cjenikPaketiRangeInput}>
-              <input
-                type="range"
-                min="10"
-                max="50"
-                step={"10"}
-                defaultValue={brojOglasa}
-                value={brojOglasa}
-                onChange={(e) => setBrojOglasa(e.target.value)}
-                // disabled={activeCards === "oglasi" ? true : false}
-              />
+              {activeCards === "oglasi" ? (
+                <input
+                  className={styles.cjenikPaketiRangeInputOglasi}
+                  type="range"
+                  min="10"
+                  max="50"
+                  step={"10"}
+                  defaultValue={brojOglasa}
+                  value={brojOglasa}
+                  onChange={(e) => setBrojOglasa(e.target.value)}
+                  // disabled={activeCards === "oglasi" ? true : false}
+                />
+              ) : (
+                <input
+                  className={styles.cjenikPaketiRangeInputPaketi}
+                  type="range"
+                  min="10"
+                  max="50"
+                  step={"10"}
+                  defaultValue={brojOglasa}
+                  value={brojOglasa}
+                  onChange={(e) => setBrojOglasa(e.target.value)}
+                  // disabled={activeCards === "oglasi" ? true : false}
+                />
+              )}
             </div>
           </div>
         </div>
@@ -142,7 +172,7 @@ const Cjenik = () => {
             <CjenikCard
               name="Click"
               category="paket"
-              price={newPriceClick}
+              price={newPriceClickPaket}
               oldPrice={prices.click * brojOglasa}
               paketiSavings={paketiSavings}
               features={[
@@ -156,7 +186,7 @@ const Cjenik = () => {
             <CjenikCard
               name="Swipe"
               category="paket"
-              price={newPriceSwipe}
+              price={newPriceSwipePaket}
               oldPrice={prices.swipe * brojOglasa}
               paketiSavings={paketiSavings}
               features={[
@@ -174,7 +204,7 @@ const Cjenik = () => {
             <CjenikCard
               name="Match"
               category="paket"
-              price={newPriceMatch}
+              price={newPriceMatchPaket}
               oldPrice={prices.match * brojOglasa}
               paketiSavings={paketiSavings}
               features={[

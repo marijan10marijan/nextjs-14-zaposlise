@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./cjenikCard.module.css";
+import { priceWithCommas } from "@/utils/priceWithCommas";
 
 const CjenikCard = ({
   name,
@@ -21,8 +22,14 @@ const CjenikCard = ({
           </p>
         </div>
         <div className={styles.cjenikCardTopPrice}>
-          <p>€{price}</p>
-          {oldPrice ? <p>€{oldPrice}</p> : null}
+          <p className={styles.cjenikCardTopPriceBig}>
+            €{priceWithCommas(price)}
+          </p>
+          {oldPrice ? (
+            <p className={styles.cjenikCardTopPriceSmall}>
+              €{priceWithCommas(oldPrice)}
+            </p>
+          ) : null}
         </div>
       </div>
       <ul>
