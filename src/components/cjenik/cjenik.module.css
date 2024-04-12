@@ -184,7 +184,7 @@
 .cjenikBoxFooter .cjenikBoxDesc {
   color: white;
 }
-.cjenikBoxFooter .cjenikBox img {
+.cjenikBoxFooter img {
   margin-left: auto;
 }
 
@@ -248,7 +248,7 @@
     grid-template-columns: revert;
     grid-template-rows: repeat(2, min-content);
   }
-  .cjenikBoxFooter .cjenikBox img {
+  .cjenikBoxFooter img {
     grid-row: 1 / 2;
     margin: 0 auto;
   }
