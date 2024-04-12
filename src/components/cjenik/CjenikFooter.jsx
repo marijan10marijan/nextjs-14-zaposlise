@@ -30,6 +30,7 @@ const CjenikFooter = () => {
         alt="agencije i velika poduzeca ikona"
         width={162}
         height={162}
+        
       />
     </div>
   );

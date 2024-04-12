@@ -184,6 +184,9 @@
 .cjenikBoxFooter .cjenikBoxDesc {
   color: white;
 }
+.cjenikBoxFooter .cjenikBox img {
+  margin-left: auto;
+}
 
 /* BREAKPOINTS *************************************************************************************** */
 @media (max-width: 1440px) {
@@ -237,5 +240,16 @@
   .cjenikBoxDesc,
   .cjenikBoxBtn {
     line-height: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  .cjenikBoxFooter {
+    grid-template-columns: revert;
+    grid-template-rows: repeat(2, min-content);
+  }
+  .cjenikBoxFooter .cjenikBox img {
+    grid-row: 1 / 2;
+    margin: 0 auto;
   }
 }
