@@ -9,7 +9,7 @@ import CjenikFooter from "./CjenikFooter";
 const Cjenik = () => {
   const [activeButton, setActiveButton] = useState("oglasiButton");
   const [activeCards, setActiveCards] = useState("oglasi");
-  const [brojOglasa, setBrojOglasa] = useState(30);
+  const [brojOglasa, setBrojOglasa] = useState(10);
   const [oglasiSavings, setOglasiSavings] = useState(0);
   const [paketiSavings, setPaketiSavings] = useState(brojOglasa / 2);
   const [prices, setPrices] = useState({
@@ -26,6 +26,11 @@ const Cjenik = () => {
       setActiveCards("oglasi");
       setActiveButton("oglasiButton");
     }
+  };
+
+  const handleInputChange = (e) => {
+    setBrojOglasa(e.target.value);
+    setPaketiSavings(e.target.value / 2);
   };
   //   let savingsPriceOglas;
 
@@ -92,11 +97,8 @@ const Cjenik = () => {
                   type="range"
                   min="10"
                   max="50"
-                  step={"10"}
-                  defaultValue={brojOglasa}
-                  value={brojOglasa}
-                  onChange={(e) => setBrojOglasa(e.target.value)}
-                  // disabled={activeCards === "oglasi" ? true : false}
+                  step="10"
+                  disabled={true}
                 />
               ) : (
                 <input
@@ -104,11 +106,9 @@ const Cjenik = () => {
                   type="range"
                   min="10"
                   max="50"
-                  step={"10"}
-                  defaultValue={brojOglasa}
+                  step="10"
                   value={brojOglasa}
-                  onChange={(e) => setBrojOglasa(e.target.value)}
-                  // disabled={activeCards === "oglasi" ? true : false}
+                  onChange={handleInputChange}
                 />
               )}
             </div>

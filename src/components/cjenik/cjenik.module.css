@@ -86,17 +86,11 @@
 .cjenikPaketiRangeInputOglasi {
   width: 100%;
   background-color: rgb(238, 238, 238);
-  pointer-events: none;
-  outline: none;
-  caret-color: red;
   accent-color: red;
 }
 .cjenikPaketiRangeInputPaketi {
   width: 100%;
   background-color: rgb(238, 238, 238);
-  pointer-events: none;
-  outline: none;
-  caret-color: blue;
   accent-color: blue;
 }
 
