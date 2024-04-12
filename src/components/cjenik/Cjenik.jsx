@@ -98,6 +98,8 @@ const Cjenik = () => {
                   min="10"
                   max="50"
                   step="10"
+                  value="10"
+                  onChange={() => {}}
                   disabled={true}
                 />
               ) : (
