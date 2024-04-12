@@ -107,13 +107,24 @@
   grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: clamp(1rem, 5vw, 3rem);
 }
-.cjenikBox {
+.cjenikBox,
+.cjenikBoxFooter {
   padding: clamp(1.25rem, 5vw, 2rem);
   display: flex;
   gap: 1rem;
   align-items: center;
   box-shadow: rgba(16, 24, 40, 0.08) 0 16px 12px;
   border-radius: 1rem;
+}
+.cjenikBoxFooter {
+  background-color: #1565d8;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: clamp(1rem, 5vw, 3rem);
+  padding: 2rem;
+  gap: clamp(1rem, 5vw, 3rem);
+  color: white;
+  margin-block-end: 100px;
 }
 .cjenikBoxContent {
   height: 100%;
@@ -167,6 +178,12 @@
 }
 
 /* CJENIK FOOTER ************************************************************************************ */
+.cjenikBoxFooter .cjenikBoxTitle {
+  color: white;
+}
+.cjenikBoxFooter .cjenikBoxDesc {
+  color: white;
+}
 
 /* BREAKPOINTS *************************************************************************************** */
 @media (max-width: 1440px) {
@@ -178,6 +195,9 @@
   }
 }
 @media (max-width: 1290px) {
+  .cjenikBoxFooter {
+    margin-block-end: 80px;
+  }
 }
 @media (max-width: 1199px) {
   .cjenikHeaderDescription,
@@ -203,6 +223,9 @@
   .cjenikBox {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .cjenikBoxFooter {
+    margin-block-end: 50px;
   }
 }
 @media (max-width: 767px) {
