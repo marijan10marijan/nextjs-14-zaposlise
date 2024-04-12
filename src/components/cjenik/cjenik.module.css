@@ -102,19 +102,88 @@
 }
 
 /* CJENIK BOXES ************************************************************************************ */
+.cjenikBoxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: clamp(1rem, 5vw, 3rem);
+}
+.cjenikBox {
+  padding: clamp(1.25rem, 5vw, 2rem);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: rgba(16, 24, 40, 0.08) 0 16px 12px;
+  border-radius: 1rem;
+}
+.cjenikBoxContent {
+  height: 100%;
+  display: grid;
+}
+.cjenikBoxTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ff-inter-semi-bold-600);
+  font-size: 1.25rem;
+  color: #1565d8;
+  line-height: 29px;
+}
+.cjenikBoxDesc {
+  font-family: var(--ff-inter-regular-400);
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  color: #1a1d1e;
+  line-height: 29px;
+}
+.cjenikBoxBtn {
+  width: 100%;
+  width: fit-content;
+  background-color: #19bb70 !important;
+  display: grid !important;
+  place-content: center !important;
+  padding: 0.625em 1.3125em !important;
+  outline: 2px solid #19bb70;
+  border: 0 !important;
+  border-radius: 0.75em !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  margin-top: auto;
+  font-family: var(--ff-inter-medium-500);
+  transition: all 0.15s ease-in-out;
+  line-height: 29px;
+  cursor: pointer;
+}
+.cjenikBoxBtn:hover {
+  background-color: #fff !important;
+  outline: 2px solid #222132 !important;
+  color: #222132 !important;
+  transition: all 0.15s ease-in-out;
+}
+.cjenikBox img {
+  object-fit: cover;
+  flex-shrink: 0;
+}
 
 /* CJENIK FOOTER ************************************************************************************ */
 
 /* BREAKPOINTS *************************************************************************************** */
 @media (max-width: 1440px) {
-  .cjenikHeaderDescription {
+  .cjenikHeaderDescription,
+  .cjenikBoxTitle,
+  .cjenikBoxDesc,
+  .cjenikBoxBtn {
     line-height: 24px;
   }
 }
 @media (max-width: 1290px) {
 }
 @media (max-width: 1199px) {
-  .cjenikHeaderDescription {
+  .cjenikHeaderDescription,
+  .cjenikBoxTitle,
+  .cjenikBoxDesc,
+  .cjenikBoxBtn {
     line-height: 22px;
   }
 }
@@ -131,12 +200,19 @@
     align-items: flex-start;
     gap: 3.25rem;
   }
+  .cjenikBox {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 @media (max-width: 767px) {
   .cjenikHeaderTitle {
     margin-block-start: 20px;
   }
-  .cjenikHeaderDescription {
+  .cjenikHeaderDescription,
+  .cjenikBoxTitle,
+  .cjenikBoxDesc,
+  .cjenikBoxBtn {
     line-height: 20px;
   }
 }
