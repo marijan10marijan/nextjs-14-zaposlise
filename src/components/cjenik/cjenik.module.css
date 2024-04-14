@@ -264,7 +264,7 @@
 .cjenikPaketiRangeOglasiValue {
   position: absolute;
   top: -50px;
-  left: -0.55rem;
+  left: -5px;
   width: 2.25rem;
   height: 2.25rem;
   display: grid;
@@ -307,7 +307,6 @@
   place-items: center;
   background-color: #1565d8;
   border-radius: 8px;
-  padding: 2px 4px;
   color: white;
   font-size: 12px;
 }

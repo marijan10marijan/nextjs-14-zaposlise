@@ -128,7 +128,12 @@ const Cjenik = () => {
                     value={brojOglasa}
                     onChange={handleInputChange}
                   />
-                  <div className={styles.cjenikPaketiRangePaketiValue}>
+                  <div
+                    className={styles.cjenikPaketiRangePaketiValue}
+                    style={{
+                      left: `calc((${brojOglasa} - 10) * 2.5% - (0.5px * ${brojOglasa}))`,
+                    }}
+                  >
                     {brojOglasa}
                   </div>
                 </div>
