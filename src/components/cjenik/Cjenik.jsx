@@ -12,6 +12,7 @@ const Cjenik = () => {
   const [activeButton, setActiveButton] = useState("oglasiButton");
   const [activeCards, setActiveCards] = useState("oglasi");
   const [brojOglasa, setBrojOglasa] = useState(10);
+  const [brojOglasaStatic, setBrojOglasaStatic] = useState(10);
   const [oglasiSavings, setOglasiSavings] = useState(0);
   const [paketiSavings, setPaketiSavings] = useState(brojOglasa / 2);
   const [prices, setPrices] = useState({
@@ -101,26 +102,36 @@ const Cjenik = () => {
             <p>Broj oglasa godišnje</p>
             <div className={styles.cjenikPaketiRangeInput}>
               {activeCards === "oglasi" ? (
-                <input
-                  className={styles.cjenikPaketiRangeInputOglasi}
-                  type="range"
-                  min="10"
-                  max="50"
-                  step="10"
-                  value="10"
-                  onChange={() => {}}
-                  disabled={true}
-                />
+                <div className={styles.cjenikPaketiRangeInputWrapper}>
+                  <input
+                    className={styles.cjenikPaketiRangeInputOglasi}
+                    type="range"
+                    min="10"
+                    max="50"
+                    step="10"
+                    value="10"
+                    onChange={() => {}}
+                    disabled={true}
+                  />
+                  <div className={styles.cjenikPaketiRangeOglasiValue}>
+                    {brojOglasaStatic}
+                  </div>
+                </div>
               ) : (
-                <input
-                  className={styles.cjenikPaketiRangeInputPaketi}
-                  type="range"
-                  min="10"
-                  max="50"
-                  step="10"
-                  value={brojOglasa}
-                  onChange={handleInputChange}
-                />
+                <div className={styles.cjenikPaketiRangeInputWrapper}>
+                  <input
+                    className={styles.cjenikPaketiRangeInputPaketi}
+                    type="range"
+                    min="10"
+                    max="50"
+                    step="10"
+                    value={brojOglasa}
+                    onChange={handleInputChange}
+                  />
+                  <div className={styles.cjenikPaketiRangePaketiValue}>
+                    {brojOglasa}
+                  </div>
+                </div>
               )}
             </div>
           </div>
