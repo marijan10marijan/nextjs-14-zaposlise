@@ -20,15 +20,21 @@ const Cjenik = () => {
     match: 377,
   });
 
+  // TOGGLE FORM FUNCTION, CHANGE STATE ON CLICK
   const toggleForm = () => {
     setActiveForm((prev) => !prev);
   };
+
+  // USE EFFECT THAT PREVENT BODY FROM SCROLLING WHILE MODAL IS OPEN
   useEffect(() => {
     if (activeForm) {
       document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
     }
   }, [activeForm]);
 
+  // CHANGE BETWEEN OGLAS BUTTON AND PAKETI BUTTON
   const handleClick = () => {
     if (activeCards === "oglasi") {
       setActiveCards("paketi");
@@ -39,21 +45,13 @@ const Cjenik = () => {
     }
   };
 
+  // HANDLE RANGE INPUT TO CALCULATE PRICE
   const handleInputChange = (e) => {
     setBrojOglasa(e.target.value);
     setPaketiSavings(e.target.value / 2);
   };
-  //   let savingsPriceOglas;
 
-  //   if (oglasiSavings > 0) {
-  //     savingsPriceOglas = (prices.click * brojOglasa * oglasiSavings) / 100;
-  //   } else {
-  //     savingsPriceOglas = 0;
-  //   }
-  //   const newPriceClickOglas = prices.click - savingsPriceOglas;
-  //   const newPriceSwipeOglas = prices.swipe - savingsPriceOglas;
-  //   const newPriceMatchOglas = prices.match - savingsPriceOglas;
-
+  // CALCULATE PRICE BASED ON DISCOUNT AND NUMBER OF OGLAS
   let newPriceClickPaket;
   let newPriceSwipePaket;
   let newPriceMatchPaket;
@@ -248,7 +246,7 @@ const Cjenik = () => {
         {/* CJENIK FOOTER **************************************************************** */}
         <CjenikFooter toggleForm={toggleForm} />
       </div>
-      {activeForm ? <CjenikKontaktForm setActiveForm={setActiveForm}/> : null}
+      {activeForm ? <CjenikKontaktForm setActiveForm={setActiveForm} /> : null}
     </section>
   );
 };

@@ -288,6 +288,9 @@
   .cjenikBoxContentSmallP {
     line-height: 22px;
   }
+  .cjenikFormWrapper {
+    margin-inline: 45px;
+  }
 }
 @media (max-width: 991px) {
   .cjenikPaketi {
@@ -308,6 +311,9 @@
   }
   .cjenikBoxFooter {
     margin-block-end: 50px;
+  }
+  .cjenikFormWrapper {
+    margin-inline: 15px;
   }
 }
 @media (max-width: 767px) {
