@@ -26,14 +26,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: min(62rem, 100vw);
-  height: 90vh;
+  height: 80vh;
   background-color: white;
   margin: auto;
   position: relative;
   border-radius: 1rem;
   overflow-y: auto;
-  border: 2px solid black;
-  outline: 1px solid white;
 }
 /* @media (min-height: 670px) {
   .cjenikFormWrapper {
