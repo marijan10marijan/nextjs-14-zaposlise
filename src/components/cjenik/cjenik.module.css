@@ -33,11 +33,7 @@
   border-radius: 1rem;
   overflow-y: auto;
 }
-/* @media (min-height: 670px) {
-  .cjenikFormWrapper {
-    max-height: 615px;
-  }
-} */
+
 .cjenikFormClose {
   position: absolute;
   top: 1rem;
@@ -68,6 +64,7 @@
 }
 .cjenikFormFormaDiv {
   display: grid;
+  place-items: center;
   padding: clamp(1.5rem, 2vw, 3rem) clamp(1.5rem, 8vw, 2.5rem);
 }
 
