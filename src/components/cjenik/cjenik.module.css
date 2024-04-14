@@ -41,7 +41,7 @@
 .cjenikFormClose {
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 0.5rem;
   background-color: white;
   border: none;
   outline: none;
