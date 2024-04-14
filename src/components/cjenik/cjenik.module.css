@@ -277,6 +277,19 @@
   font-size: 12px;
   font-weight: 600;
 }
+.cjenikPaketiRangeOglasiValue::before,
+.cjenikPaketiRangePaketiValue::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #1565d8;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 /* PAKETI INPUT AND VALUE ************************************************ */
 .cjenikPaketiRangeInputPaketi {
@@ -287,6 +300,7 @@
   appearance: none;
   background-color: #eee;
   accent-color: #0366d6;
+  cursor: grab;
 }
 
 .cjenikPaketiRangeInputPaketi::-webkit-slider-thumb {
