@@ -33,6 +33,11 @@
   border-radius: 1rem;
   overflow-y: auto;
 }
+@media (min-height: 700px) {
+  .cjenikFormWrapper {
+    height: 650px;
+  }
+}
 
 .cjenikFormClose {
   position: absolute;
