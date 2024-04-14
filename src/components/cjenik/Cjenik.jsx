@@ -136,6 +136,12 @@ const Cjenik = () => {
                   >
                     {brojOglasa}
                   </div>
+                  <div
+                    className={styles.cjenikPaketiRangePaketiTrack}
+                    style={{
+                      width: `calc((${brojOglasa} - 10) * 2.5%)`,
+                    }}
+                  ></div>
                 </div>
               )}
             </div>
