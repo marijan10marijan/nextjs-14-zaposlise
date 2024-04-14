@@ -26,23 +26,32 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: min(62rem, 100vw);
-  min-height: 85vh;
+  height: 90vh;
   background-color: white;
   margin: auto;
   position: relative;
   border-radius: 1rem;
-  /* overflow-y: scroll; */
+  overflow-y: auto;
   border: 2px solid black;
   outline: 1px solid white;
+}
+@media (min-height: 670px) {
+  .cjenikFormWrapper {
+    max-height: 615px;
+  }
 }
 .cjenikFormClose {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  background-color: white;
+  border: none;
+  outline: none;
   font-size: 2rem;
   aspect-ratio: 1;
   cursor: pointer;
 }
+
 .cjenikFormImgDiv {
   position: relative;
   width: 100%;
@@ -59,6 +68,97 @@
   width: 100%;
   height: 100%;
 }
+.cjenikFormFormaDiv {
+  display: grid;
+  padding: clamp(1.5rem, 2vw, 3rem) clamp(1.5rem, 8vw, 2.5rem);
+}
+
+.cjenikFormFormaDiv h3 {
+  font-family: var(--ff-inter-bold-700);
+  color: #222132;
+  font-size: clamp(1.25rem, 5vw, 1.875rem);
+  line-height: 1.2;
+}
+.cjenikFormFormaDiv p {
+  font-size: 0.875rem;
+  padding-bottom: 0;
+  line-height: 1;
+  margin-block-start: 0.875rem;
+  color: #858597;
+}
+.cjenikFormForma {
+  display: flex;
+  flex-direction: column;
+  vertical-align: inherit;
+  gap: 10px;
+  width: 100%;
+}
+.cjenikFormForma div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cjenikFormForma div label {
+  font-size: 0.75rem;
+  font-family: var(--ff-inter-medium-500);
+  color: #858597;
+  line-height: 29px;
+}
+.cjenikFormForma div input,
+.cjenikFormForma div textarea {
+  height: clamp(2.75rem, 8vw, 3.125rem);
+  font-size: 0.875rem;
+  color: #606266;
+  border: 1px solid #dadbdd;
+  border-radius: 7px;
+  font-family: -apple-system, "system-ui", Segoe UI, Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, Helvetica Neue, sans-serif;
+  line-height: 1;
+  padding: 11px 15px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.cjenikFormForma div input:focus,
+.cjenikFormForma div textarea:focus {
+  background-color: #fff;
+  border-color: #1a7efb;
+  color: #606266;
+  outline: none;
+}
+
+.cjenikFormForma div textarea::placeholder {
+  font-size: 0.875rem;
+}
+.cjenikFormForma div textarea {
+  resize: none;
+  min-height: 90px;
+  overflow: hidden;
+}
+
+.cjenikFormFormaBtn {
+  margin-block-start: 1.875rem;
+  background-color: #19bb70 !important;
+  display: grid !important;
+  place-content: center !important;
+  padding: 0.625em 1.3125em !important;
+  outline: 2px solid #19bb70;
+  border: 0 !important;
+  border-radius: 0.75em !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  margin-top: auto;
+  font-family: var(--ff-inter-medium-500);
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.cjenikFormFormaBtn:hover {
+  background-color: #fff !important;
+  outline: 2px solid #222132 !important;
+  color: #222132 !important;
+}
+
 /* CJENIK HEADER ************************************************************************************ */
 .cjenikHeaderTitle {
   margin-block-start: 40px;
@@ -271,7 +371,8 @@
   .cjenikBoxTitle,
   .cjenikBoxDesc,
   .cjenikBoxBtn,
-  .cjenikBoxContentSmallP {
+  .cjenikBoxContentSmallP,
+  .cjenikFormForma div label {
     line-height: 24px;
   }
 }
@@ -285,7 +386,8 @@
   .cjenikBoxTitle,
   .cjenikBoxDesc,
   .cjenikBoxBtn,
-  .cjenikBoxContentSmallP {
+  .cjenikBoxContentSmallP,
+  .cjenikFormForma div label {
     line-height: 22px;
   }
   .cjenikFormWrapper {
@@ -324,8 +426,20 @@
   .cjenikBoxTitle,
   .cjenikBoxDesc,
   .cjenikBoxBtn,
-  .cjenikBoxContentSmallP {
+  .cjenikBoxContentSmallP,
+  .cjenikFormForma div label {
     line-height: 20px;
+  }
+  .cjenikFormImgDiv {
+    display: none;
+  }
+  .cjenikFormWrapper {
+    grid-template-columns: 1fr;
+  }
+  .cjenikFormFormaDiv {
+    width: 100%;
+    display: grid;
+    padding: clamp(1.5rem, 2vw, 3rem) clamp(1.5rem, 8vw, 2.5rem);
   }
 }
 

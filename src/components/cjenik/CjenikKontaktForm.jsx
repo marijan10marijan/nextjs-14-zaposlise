@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./cjenik.module.css";
 import Image from "next/image";
+import { IoClose } from "react-icons/io5";
 
 const CjenikKontaktForm = ({ setActiveForm }) => {
   return (
@@ -10,7 +11,7 @@ const CjenikKontaktForm = ({ setActiveForm }) => {
           onClick={() => setActiveForm(false)}
           className={styles.cjenikFormClose}
         >
-          x
+          <IoClose size={38} />
         </button>
         <div className={styles.cjenikFormImgDiv}>
           <Image
@@ -22,9 +23,29 @@ const CjenikKontaktForm = ({ setActiveForm }) => {
             fill
           />
         </div>
-        <div>
+        <div className={styles.cjenikFormFormaDiv}>
           <h3>Kontaktirajte nas i pronađimo Vam novog kolegu zajedno</h3>
           <p>Pošalji nam upit, ubrzo ćemo te kontaktirati.</p>
+          <form className={styles.cjenikFormForma}>
+            <div>
+              <label htmlFor="tel">Telefon</label>
+              <input type="tel" id="tel" placeholder="099 XXX XXXX" />
+            </div>
+            <div>
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" placeholder="primjer@email.com" />
+            </div>
+            <div>
+              <label htmlFor="text">Poruka</label>
+              <textarea
+                placeholder="Unesi poruku"
+                id="text"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button className={styles.cjenikFormFormaBtn}>Pošalji</button>
+          </form>
         </div>
       </div>
     </div>
