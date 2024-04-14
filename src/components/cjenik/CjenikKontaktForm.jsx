@@ -29,7 +29,7 @@ const CjenikKontaktForm = ({ setActiveForm }) => {
           <form className={styles.cjenikFormForma}>
             <div>
               <label htmlFor="tel">Telefon</label>
-              <input type="tel" id="tel" placeholder="099 XXX XXXX" />
+              <input type="tel" id="tel" placeholder="099 xxx xxxx" />
             </div>
             <div>
               <label htmlFor="email">Email</label>

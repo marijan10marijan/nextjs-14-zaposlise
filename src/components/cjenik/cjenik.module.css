@@ -275,6 +275,7 @@
   padding: 2px 4px;
   color: white;
   font-size: 12px;
+  font-weight: 600;
 }
 
 /* PAKETI INPUT AND VALUE ************************************************ */
@@ -311,6 +312,7 @@
   border-radius: 8px;
   color: white;
   font-size: 12px;
+  font-weight: 600;
 }
 .cjenikPaketiRangePaketiTrack {
   position: absolute;
