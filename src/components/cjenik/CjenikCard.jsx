@@ -10,6 +10,7 @@ const CjenikCard = ({
   oglasiSavings,
   paketiSavings,
   features,
+  toggleForm
 }) => {
   return (
     <article className={styles.cjenikCard}>
@@ -44,7 +45,7 @@ const CjenikCard = ({
           </li>
         ))}
       </ul>
-      <button>Pošalji upit</button>
+      <button onClick={toggleForm}>Pošalji upit</button>
       <p className={styles.cjenikCardSmallParagraph}>
         * Cijene su izražene u EUR, bez PDV-a. Jedan oglas se odnosi na objavu
         jedne radne pozicije.

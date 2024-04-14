@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./cjenik.module.css";
 import Image from "next/image";
 
-const CjenikBoxes = () => {
+const CjenikBoxes = ({ toggleForm }) => {
   return (
     <div className={styles.cjenikBoxes}>
       <div className={styles.cjenikBox}>
@@ -13,7 +13,9 @@ const CjenikBoxes = () => {
             godine? Kontaktirajte nas za personaliziranu ponudu sukladno Vašim
             potreba
           </p>
-          <button className={styles.cjenikBoxBtn}>Kontaktiraj nas</button>
+          <button onClick={toggleForm} className={styles.cjenikBoxBtn}>
+            Kontaktiraj nas
+          </button>
         </div>
         <Image
           src={
@@ -33,7 +35,9 @@ const CjenikBoxes = () => {
             posao. Kontaktirajte nas kako biste podijelili svoje prilike za
             zapošljavanje novih kolega s Zaposlise.hr zajednicom.
           </p>
-          <button className={styles.cjenikBoxBtn}>Kontaktiraj nas</button>
+          <button onClick={toggleForm} className={styles.cjenikBoxBtn}>
+            Kontaktiraj nas
+          </button>
         </div>
         <Image
           src={

@@ -1,13 +1,64 @@
 .cjenik {
   width: 100%;
+  position: relative;
 }
+
 .cjenikContainer {
   max-width: 1300px;
   width: 100%;
   margin-inline: auto;
   padding-inline: 15px;
 }
+/* CJENIK KONTAKT FORM  ************************************************************************************ */
+.cjenikForm {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 33, 50, 0.5);
+  display: grid;
+  place-items: center;
+}
 
+.cjenikFormWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: min(62rem, 100vw);
+  min-height: 85vh;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  border-radius: 1rem;
+  /* overflow-y: scroll; */
+  border: 2px solid black;
+  outline: 1px solid white;
+}
+.cjenikFormClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+.cjenikFormImgDiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  overflow: hidden;
+}
+.cjenikFormImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 /* CJENIK HEADER ************************************************************************************ */
 .cjenikHeaderTitle {
   margin-block-start: 40px;

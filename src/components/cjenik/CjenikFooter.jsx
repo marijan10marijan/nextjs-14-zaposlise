@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./cjenik.module.css";
 import Image from "next/image";
 
-const CjenikFooter = () => {
+const CjenikFooter = ({ toggleForm }) => {
   return (
     <div className={styles.cjenikBoxFooter}>
       <div className={styles.cjenikBoxContent}>
@@ -21,7 +21,9 @@ const CjenikFooter = () => {
             godišnja bilanca ne prelazi 2 milijuna eura
           </em>
         </p>
-        <button className={styles.cjenikBoxBtn}>Kontaktiraj nas</button>
+        <button onClick={toggleForm} className={styles.cjenikBoxBtn}>
+          Kontaktiraj nas
+        </button>
       </div>
       <Image
         src={

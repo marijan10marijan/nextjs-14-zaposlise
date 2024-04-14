@@ -1,12 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./cjenik.module.css";
 import CjenikCard from "./CjenikCard";
 import CjenikHeader from "./CjenikHeader";
 import CjenikBoxes from "./CjenikBoxes";
 import CjenikFooter from "./CjenikFooter";
+import CjenikKontaktForm from "./CjenikKontaktForm";
 
 const Cjenik = () => {
+  const [activeForm, setActiveForm] = useState(false);
   const [activeButton, setActiveButton] = useState("oglasiButton");
   const [activeCards, setActiveCards] = useState("oglasi");
   const [brojOglasa, setBrojOglasa] = useState(10);
@@ -17,6 +19,15 @@ const Cjenik = () => {
     swipe: 227,
     match: 377,
   });
+
+  const toggleForm = () => {
+    setActiveForm((prev) => !prev);
+  };
+  useEffect(() => {
+    if (activeForm) {
+      document.body.style.overflow = "hidden";
+    }
+  }, [activeForm]);
 
   const handleClick = () => {
     if (activeCards === "oglasi") {
@@ -131,6 +142,7 @@ const Cjenik = () => {
                 "Personalizirana korisnička podrška",
                 "Automatizirana poruka odbijenice",
               ]}
+              toggleForm={toggleForm}
             />
             <CjenikCard
               name="Swipe"
@@ -148,6 +160,7 @@ const Cjenik = () => {
                 "Automatizirana poruka odbijenice",
                 "Produljenje oglasa",
               ]}
+              toggleForm={toggleForm}
             />
             <CjenikCard
               name="Match"
@@ -167,6 +180,7 @@ const Cjenik = () => {
                 "Automatizirana poruka odbijenice",
                 "Produljenje oglasa",
               ]}
+              toggleForm={toggleForm}
             />
           </div>
         ) : (
@@ -184,6 +198,7 @@ const Cjenik = () => {
                 "Personalizirana korisnička podrška",
                 "Automatizirana poruka odbijenice",
               ]}
+              toggleForm={toggleForm}
             />
             <CjenikCard
               name="Swipe"
@@ -202,6 +217,7 @@ const Cjenik = () => {
                 "Automatizirana poruka odbijenice",
                 "Produljenje oglasa",
               ]}
+              toggleForm={toggleForm}
             />
             <CjenikCard
               name="Match"
@@ -222,15 +238,17 @@ const Cjenik = () => {
                 "Automatizirana poruka odbijenice",
                 "Produljenje oglasa",
               ]}
+              toggleForm={toggleForm}
             />
           </div>
         )}
 
         {/* CJENIK BOXES **************************************************************** */}
-        <CjenikBoxes />
+        <CjenikBoxes toggleForm={toggleForm} />
         {/* CJENIK FOOTER **************************************************************** */}
-        <CjenikFooter />
+        <CjenikFooter toggleForm={toggleForm} />
       </div>
+      {activeForm ? <CjenikKontaktForm setActiveForm={setActiveForm}/> : null}
     </section>
   );
 };
