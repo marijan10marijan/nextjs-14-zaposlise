@@ -35,11 +35,11 @@
   border: 2px solid black;
   outline: 1px solid white;
 }
-@media (min-height: 670px) {
+/* @media (min-height: 670px) {
   .cjenikFormWrapper {
     max-height: 615px;
   }
-}
+} */
 .cjenikFormClose {
   position: absolute;
   top: 1rem;

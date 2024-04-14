@@ -11,7 +11,7 @@ const CjenikKontaktForm = ({ setActiveForm }) => {
           onClick={() => setActiveForm(false)}
           className={styles.cjenikFormClose}
         >
-          <IoClose size={38} />
+          <IoClose size={38} fill="black" />
         </button>
         <div className={styles.cjenikFormImgDiv}>
           <Image
