@@ -83,15 +83,25 @@
   width: 100%;
   min-width: 200px;
 }
+
 .cjenikPaketiRangeInputOglasi {
   width: 100%;
   background-color: rgb(238, 238, 238);
   accent-color: red;
+  border-radius: 5px;
+  height: 8px;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .cjenikPaketiRangeInputPaketi {
   width: 100%;
   background-color: rgb(238, 238, 238);
+  height: 8px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  appearance: none;
   accent-color: blue;
+  caret-color: blue;
 }
 
 /* CJENIK CARDS *************************************************************************************** */
@@ -180,12 +190,28 @@
 /* CJENIK FOOTER ************************************************************************************ */
 .cjenikBoxFooter .cjenikBoxTitle {
   color: white;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-family: var(--ff-inter-semi-bold-600);
+  line-height: 1.1;
 }
 .cjenikBoxFooter .cjenikBoxDesc {
   color: white;
+  font-size: 1.125rem;
+  margin-block-start: 0px;
+  padding-bottom: 1rem;
+  font-family: var(--ff-inter-light-300);
 }
 .cjenikBoxFooter img {
   margin-left: auto;
+  vertical-align: middle;
+  align-self: flex-start;
+}
+.cjenikBoxContentSmallP {
+  padding-bottom: 1rem;
+  font-family: var(--ff-inter-light-300);
+  font-size: 0.875rem;
+  line-height: 29px;
 }
 
 /* BREAKPOINTS *************************************************************************************** */
@@ -193,7 +219,8 @@
   .cjenikHeaderDescription,
   .cjenikBoxTitle,
   .cjenikBoxDesc,
-  .cjenikBoxBtn {
+  .cjenikBoxBtn,
+  .cjenikBoxContentSmallP {
     line-height: 24px;
   }
 }
@@ -206,7 +233,8 @@
   .cjenikHeaderDescription,
   .cjenikBoxTitle,
   .cjenikBoxDesc,
-  .cjenikBoxBtn {
+  .cjenikBoxBtn,
+  .cjenikBoxContentSmallP {
     line-height: 22px;
   }
 }
@@ -238,7 +266,8 @@
   .cjenikHeaderDescription,
   .cjenikBoxTitle,
   .cjenikBoxDesc,
-  .cjenikBoxBtn {
+  .cjenikBoxBtn,
+  .cjenikBoxContentSmallP {
     line-height: 20px;
   }
 }

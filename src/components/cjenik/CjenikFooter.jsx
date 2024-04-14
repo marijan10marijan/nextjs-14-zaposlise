@@ -15,7 +15,7 @@ const CjenikFooter = () => {
           popusta na sve oglase i pakete. Spadate li u kategoriju Mikropoduzeća,
           kontaktirajte nas odmah kako bi ostvarili popust.
         </p>
-        <p>
+        <p className={styles.cjenikBoxContentSmallP}>
           <em>
             * Tvrtka s manje od 10 zaposlenih, čiji godišnji promet i/ili
             godišnja bilanca ne prelazi 2 milijuna eura
@@ -30,7 +30,6 @@ const CjenikFooter = () => {
         alt="agencije i velika poduzeca ikona"
         width={162}
         height={162}
-        
       />
     </div>
   );
